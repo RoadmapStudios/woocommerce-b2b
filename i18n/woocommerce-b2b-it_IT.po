@@ -1,0 +1,3169 @@
+# woocommerce-b2b (c) 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce B2B 4.0.8\n"
+"Report-Msgid-Bugs-To: https://support.woocommerce-b2b.com/\n"
+"POT-Creation-Date: 2025-11-19 18:24:04+00:00\n"
+"PO-Revision-Date: 2025-11-19 06:35+0100\n"
+"Last-Translator: Code4Life <supporto@code4life.it>\n"
+"Language-Team: EN <support@woocommerce-b2b.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/classes/class-wcb2b-admin-orders.php:94
+msgid "Order weight"
+msgstr "Peso ordine"
+
+#: includes/classes/class-wcb2b-admin-orders.php:112
+#: includes/classes/class-wcb2b-post_types.php:952
+msgid "Customer group"
+msgstr "Gruppo cliente"
+
+#: includes/classes/class-wcb2b-admin-orders.php:130
+#: includes/classes/class-wcb2b-frontend-checkout.php:300
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:210
+msgid "Purchase order number"
+msgstr "Numero ordine di acquisto"
+
+#: includes/classes/class-wcb2b-admin-orders.php:145
+#: includes/classes/class-wcb2b-frontend-myaccount.php:232
+#: includes/classes/class-wcb2b-hooks.php:506
+msgid "Quotation valid until"
+msgstr "Preventivo valido fino a"
+
+#: includes/classes/class-wcb2b-admin-orders.php:161
+#: includes/classes/class-wcb2b-admin-users.php:97
+#: includes/classes/class-wcb2b-post_types.php:48
+#: includes/classes/class-wcb2b-post_types.php:73
+#: includes/views/html-admin-user.php:28
+msgid "Group"
+msgstr "Gruppo"
+
+#: includes/classes/class-wcb2b-admin-orders.php:162
+msgid "Payment Method"
+msgstr "Metodo di pagamento"
+
+#: includes/classes/class-wcb2b-admin-orders.php:244
+msgid "All groups"
+msgstr "Tutti i gruppi"
+
+#: includes/classes/class-wcb2b-admin-orders.php:264
+msgid "All payment methods"
+msgstr "Tutti i metodi di pagamento"
+
+#: includes/classes/class-wcb2b-admin-orders.php:320
+msgid "Display thank you page"
+msgstr "Visualizza la pagina di ringraziamento"
+
+#: includes/classes/class-wcb2b-admin-orders.php:335
+#: includes/views/html-admin-orders.php:16
+msgid "External invoice number"
+msgstr "Numero fattura esterno"
+
+#: includes/classes/class-wcb2b-admin-orders.php:396
+msgid "Change status to \"awaiting invoice payment\""
+msgstr "Modifica stato in “in attesa di pagamento fattura”"
+
+#: includes/classes/class-wcb2b-admin-orders.php:398
+msgid "Change status to \"on quote\""
+msgstr "Modifica stato in “preventivo in lavorazione”"
+
+#: includes/classes/class-wcb2b-admin-orders.php:399
+msgid "Change status to \"quoted\""
+msgstr "Modifica stato in “preventivo elaborato”"
+
+#: includes/classes/class-wcb2b-admin-orders.php:414
+#: includes/classes/class-wcb2b-admin-users.php:376
+#: includes/classes/class-wcb2b-hooks.php:641
+#: includes/classes/class-wcb2b-hooks.php:737
+#: includes/classes/class-wcb2b-hooks.php:743
+#: includes/classes/class-wcb2b-post_types.php:766
+#: includes/classes/settings/class-wcb2b-settings.php:154
+msgid "Email address for invoices"
+msgstr "Indirizzo email per fatture"
+
+#: includes/classes/class-wcb2b-admin-orders.php:442
+#: includes/classes/class-wcb2b-admin-users.php:393
+#: includes/classes/class-wcb2b-post_types.php:794
+#: includes/classes/settings/class-wcb2b-settings.php:169
+msgid "VAT number"
+msgstr "Partita IVA"
+
+#: includes/classes/class-wcb2b-admin-posts.php:44
+#: includes/views/html-admin-product-data.php:56
+msgid "Group visibility"
+msgstr "Visibilità per gruppo"
+
+#: includes/classes/class-wcb2b-admin-posts.php:116
+msgid "Quick Order Page"
+msgstr "Pagina ordine rapido"
+
+#: includes/classes/class-wcb2b-admin-posts.php:129
+#: includes/classes/class-wcb2b-admin-posts.php:193
+msgid "Visibility"
+msgstr "Visibilità"
+
+#: includes/classes/class-wcb2b-admin-posts.php:142
+msgid "Always visible page"
+msgstr "Pagine sempre visibili"
+
+#: includes/classes/class-wcb2b-admin-products.php:157
+#: includes/classes/class-wcb2b-admin-products.php:320
+#: includes/classes/class-wcb2b-admin-products.php:536
+msgid "Product visibility (%s)"
+msgstr "Visibilità prodotto (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:158
+#: includes/classes/class-wcb2b-admin-products.php:330
+#: includes/classes/class-wcb2b-admin-products.php:539
+msgid "Regular price (%s)"
+msgstr "Prezzo di listino (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:159
+#: includes/classes/class-wcb2b-admin-products.php:331
+#: includes/classes/class-wcb2b-admin-products.php:540
+msgid "Sale price (%s)"
+msgstr "Prezzo scontato (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:160
+#: includes/classes/class-wcb2b-admin-products.php:332
+#: includes/classes/class-wcb2b-admin-products.php:541
+msgid "Tier prices (%s)"
+msgstr "Prezzi per quantità (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:161
+#: includes/classes/class-wcb2b-admin-products.php:328
+#: includes/classes/class-wcb2b-admin-products.php:537
+msgid "Hide prices (%s)"
+msgstr "Nascondi prezzi (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:162
+#: includes/classes/class-wcb2b-admin-products.php:329
+#: includes/classes/class-wcb2b-admin-products.php:538
+msgid "Hide stocks (%s)"
+msgstr "Nascondi giacenza (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:164
+#: includes/classes/class-wcb2b-admin-products.php:340
+#: includes/classes/class-wcb2b-admin-products.php:542
+msgid "Packages (%s)"
+msgstr "Confezioni (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:165
+#: includes/classes/class-wcb2b-admin-products.php:341
+#: includes/classes/class-wcb2b-admin-products.php:543
+msgid "Minimum quantity (%s)"
+msgstr "Quantità minima (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:166
+#: includes/classes/class-wcb2b-admin-products.php:342
+#: includes/classes/class-wcb2b-admin-products.php:544
+msgid "Maximum quantity (%s)"
+msgstr "Quantità massima (%s)"
+
+#: includes/classes/class-wcb2b-admin-products.php:170
+#: includes/classes/class-wcb2b-admin-products.php:352
+#: includes/classes/class-wcb2b-admin-products.php:557
+#: includes/classes/class-wcb2b-post_types.php:641
+#: includes/views/html-admin-product-data.php:31
+msgid "Barcode"
+msgstr "Codice a barre"
+
+#: includes/classes/class-wcb2b-admin-products.php:318
+msgid "WCB2B - Product visibility for %s group"
+msgstr "WCB2B - Visibilità prodotto per gruppo %s"
+
+#: includes/classes/class-wcb2b-admin-products.php:326
+msgid "WCB2B - Product prices for %s group"
+msgstr "WCB2B - Prezzi prodotto per gruppo %s"
+
+#: includes/classes/class-wcb2b-admin-products.php:338
+msgid "WCB2B - Package and min-max quantity for %s group"
+msgstr "WCB2B - Confezioni e quantità minima/massima per gruppo %s"
+
+#: includes/classes/class-wcb2b-admin-products.php:350
+msgid "WCB2B - Barcode"
+msgstr "WCB2B - Codice a barre"
+
+#: includes/classes/class-wcb2b-admin-tools.php:39
+msgid "Customers"
+msgstr "Clienti"
+
+#: includes/classes/class-wcb2b-admin-tools.php:42
+msgid "In CSV format for statistics purposes"
+msgstr "In formato CSV per uso statistico"
+
+#: includes/classes/class-wcb2b-admin-users.php:98
+#: includes/views/html-admin-user.php:50
+#: includes/views/settings/html-admin-settings.php:28
+msgid "Status"
+msgstr "Stato"
+
+#: includes/classes/class-wcb2b-admin-users.php:99
+#: includes/views/html-admin-coupons.php:43
+#: includes/views/html-admin-user.php:78
+#: includes/views/settings/html-admin-settings-automatic_group_change.php:21
+msgid "Total spent"
+msgstr "Totale speso"
+
+#: includes/classes/class-wcb2b-admin-users.php:164
+msgid "Assign group"
+msgstr "Assegna gruppo"
+
+#: includes/classes/class-wcb2b-admin-users.php:165
+msgid "Change status"
+msgstr "Modifica stato"
+
+#: includes/classes/class-wcb2b-admin-users.php:292
+msgid "Filter by group"
+msgstr "Filtra per gruppo"
+
+#: includes/classes/class-wcb2b-admin-users.php:310
+msgid "Filter by status"
+msgstr "Filtra per stato"
+
+#: includes/classes/class-wcb2b-admin-users.php:324
+msgid "Filter"
+msgstr "Filtra"
+
+#: includes/classes/class-wcb2b-admin-users.php:334
+msgid "Show in cart"
+msgstr "Mostra nel carrello"
+
+#: includes/classes/class-wcb2b-admin-users.php:335
+msgid ""
+"When checked, this coupon will be visible on cart page for customers in "
+"groups in which this feature is enabled."
+msgstr ""
+"Se selezionato, questo coupon sarà visibile nella pagina del carrello per i "
+"clienti nei gruppi in cui questa funzionalità è abilitata."
+
+#: includes/classes/class-wcb2b-compatibility.php:113
+msgid "Warehouse"
+msgstr "Magazzino"
+
+#: includes/classes/class-wcb2b-compatibility.php:125
+#: includes/classes/settings/class-wcb2b-settings.php:232
+#: includes/views/html-admin-user.php:31
+msgid "-- None --"
+msgstr "— Nessuno —"
+
+#: includes/classes/class-wcb2b-compatibility.php:128
+msgid ""
+"Forces the warehouse from which to pick products for customer orders "
+"associated with this group"
+msgstr ""
+"Forza il magazzino da cui prelevare i prodotti per gli ordini dei clienti "
+"associati a questo gruppo"
+
+#: includes/classes/class-wcb2b-configuration.php:69
+msgid "Inactive"
+msgstr "Non attivo"
+
+#: includes/classes/class-wcb2b-configuration.php:70
+msgid "Active"
+msgstr "Attivo"
+
+#: includes/classes/class-wcb2b-debug.php:44
+msgid "Cannot delete MU-Plugin file"
+msgstr "Impossibile eliminare il file MU-Plugin"
+
+#: includes/classes/class-wcb2b-debug.php:50
+msgid "Cannot delete MU-Plugin directory"
+msgstr "Impossibile eliminare la directory MU-Plugin"
+
+#: includes/classes/class-wcb2b-debug.php:55
+msgid "Cannot delete IP address option"
+msgstr "Impossibile eliminare l’opzione dell’indirizzo IP"
+
+#: includes/classes/class-wcb2b-debug.php:61
+msgid "Cannot create MU-Plugin directory"
+msgstr "Impossibile creare la directory MU-Plugin"
+
+#: includes/classes/class-wcb2b-debug.php:67
+msgid "Cannot create MU-Plugin file"
+msgstr "Impossibile creare il file MU-Plugin"
+
+#: includes/classes/class-wcb2b-debug.php:72
+msgid "Cannot store IP address option"
+msgstr "Impossibile memorizzare l’opzione dell’indirizzo IP"
+
+#: includes/classes/class-wcb2b-debug.php:77
+msgid "Wrong action"
+msgstr "Azione errata"
+
+#: includes/classes/class-wcb2b-debug.php:88
+msgid "An error occurred while activating or deactivating debug mode: %s"
+msgstr ""
+"Si è verificato un errore durante l’attivazione o la disattivazione della "
+"modalità debug: %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:72
+#: includes/classes/class-wcb2b-post_types.php:1471
+msgid "Packaging fee"
+msgstr "Tariffa di imballaggio"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:115
+#: includes/classes/class-wcb2b-frontend-checkout.php:116
+#: includes/classes/class-wcb2b-post_types.php:1476
+#: includes/classes/class-wcb2b-post_types.php:2411
+msgid "Save cart"
+msgstr "Salva carrello"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:140
+msgid "Cart saved!"
+msgstr "Carrello salvato!"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:162
+msgid "Cart restored, %d items in cart"
+msgstr "Carrello ripristinato, %d articoli nel carrello"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:174
+msgid "Cart deleted!"
+msgstr "Carrello eliminato!"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:180
+msgid "An error has occurred"
+msgstr "Si è verificato un errore"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:195
+msgid "An error has occurred, please try again"
+msgstr "Si è verificato un errore, per favore riprova"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:201
+msgid "An error has occurred in upload file, please try again"
+msgstr "Si è verificato un errore nel caricamento del file, per favore riprova"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:210
+msgid "File must be a CSV, please try again"
+msgstr "Il file deve essere un CSV, per favore riprova"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:231
+msgid "SKU cannot be empty at line %s"
+msgstr "Lo SKU non può essere vuoto alla riga %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:236
+msgid "Product quantity for SKU %s must be a positive integer at line %s"
+msgstr ""
+"La quantità di prodotto per SKU %s deve essere un numero intero positivo "
+"alla riga %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:241
+msgid "No product with SKU %s was found at line %s"
+msgstr "Nessun prodotto con SKU %s è stato trovato alla riga %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:251
+msgid " - Package quantity %s applied"
+msgstr " - Quantità confezione applicata %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:255
+msgid " - Max quantity %s applied"
+msgstr " - Quantità massima applicata %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:259
+msgid " - Min quantity %s applied"
+msgstr " - Quantità minima applicata %s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:272
+msgid "%sx %s added to cart"
+msgstr "%sx %s aggiunto al carrello"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:314
+msgid "Sorry, you have reached unpaid total orders amount limit (%s)"
+msgstr ""
+"Spiacente, hai raggiunto il limite di importo totale ordini non pagati (%s)"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:343
+msgid ""
+"To proceed to checkout and complete your purchase, make sure you have "
+"reached the minimum amount of %s."
+msgstr ""
+"Per procedere alla cassa e completare il tuo acquisto, assicurati di aver "
+"raggiunto l’importo minimo di %s."
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:385
+msgid ""
+"To proceed to checkout and complete your purchase, you must reach the "
+"minimum amount of %s, but your total cart amount is currently %s. Return to "
+"%sshop%s"
+msgstr ""
+"Per procedere alla cassa e completare il tuo acquisto, devi raggiungere "
+"l’importo minimo di %s, ma il totale del tuo carrello attualmente è %s. "
+"Torna al %snegozio%s"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:402
+#: includes/classes/class-wcb2b-frontend-myaccount.php:655
+msgid "Email address for invoices is not a valid email address"
+msgstr "L’indirizzo email per fatture non è valido"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:464
+#: includes/classes/class-wcb2b-frontend-checkout.php:482
+msgid "Estimated delivery"
+msgstr "Consegna prevista"
+
+#: includes/classes/class-wcb2b-frontend-checkout.php:491
+msgid "Empty cart"
+msgstr "Svuota carrello"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:118
+#: includes/classes/class-wcb2b-frontend-myaccount.php:159
+msgid "Quotations"
+msgstr "Preventivi"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:217
+msgid "Pay now"
+msgstr "Paga adesso"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:361
+msgid "Business certificate is a required field."
+msgstr "Certificato di attività è un campo obbligatorio."
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:370
+msgid "Uploaded file exceeds max size allowed"
+msgstr "Il file caricato supera la dimensione massima consentita"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:378
+msgid "A problem has occurred"
+msgstr "Si è verificato un problema"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:381
+msgid "An unknown problem has occurred"
+msgstr "Si è verificato un problema sconosciuto"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:393
+msgid "An upload error occurred: %s"
+msgstr "Si è verificato un errore: %s"
+
+#. translators: %1$s: field name, %2$s finder.eircode.ie URL
+#: includes/classes/class-wcb2b-frontend-myaccount.php:517
+msgid ""
+"%1$s is not valid. You can look up the correct Eircode <a target=\"_blank\" "
+"href=\"%2$s\">here</a>."
+msgstr ""
+"%1$ non è valido. Puoi cercare l’Eircode corretto <a target=“_blank” "
+"href=“%2$s”>qui</a>."
+
+#. translators: %s: field name
+#: includes/classes/class-wcb2b-frontend-myaccount.php:521
+msgid "%s is not a valid postcode / ZIP."
+msgstr "%s non è un codice postale/CAP valido."
+
+#. translators: %s: phone number
+#: includes/classes/class-wcb2b-frontend-myaccount.php:532
+msgid "%s is not a valid phone number."
+msgstr "%s non è un numero di telefono valido."
+
+#. translators: %s: email address
+#: includes/classes/class-wcb2b-frontend-myaccount.php:540
+msgid "%s is not a valid email address."
+msgstr "%s non è un indirizzo e-mail valido."
+
+#. translators: 1: state field 2: valid states
+#: includes/classes/class-wcb2b-frontend-myaccount.php:560
+msgid "%1$s is not valid. Please enter one of the following: %2$s"
+msgstr "%1$s non è valido. Inserisci una delle seguenti opzioni: %2$s"
+
+#. translators: %s: field name
+#: includes/classes/class-wcb2b-frontend-myaccount.php:567
+msgid "%s is a required field."
+msgstr "%s è un campo obbligatorio."
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:574
+msgid "Please choose a group"
+msgstr "Scegli un gruppo"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:636
+msgid "Group: %s (ID: %d)"
+msgstr "Gruppo: %s (ID: %d)"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:773
+msgid "Choose your group"
+msgstr "Scegli il tuo gruppo"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:775
+msgid "-- Select --"
+msgstr "— Seleziona —"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:833
+#: includes/classes/class-wcb2b-frontend-myaccount.php:857
+msgid ""
+"Your account is now under review. You will receive an email as soon as it is "
+"activated."
+msgstr ""
+"Il tuo account è in fase di revisione. Riceverai una email appena verrà "
+"attivato."
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:879
+msgid ""
+"Your account is still under review. Please try again after receiving the "
+"approval email."
+msgstr ""
+"Il tuo account è ancora in fase di revisione. Riprova dopo aver ricevuto "
+"l’email di approvazione."
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:911
+msgid "Your unpaid amount: %s (Max allowed: %s)"
+msgstr "Importo non pagato: %s (massimo consentito: %s)"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:929
+msgid "Your current group: %s"
+msgstr "Il tuo gruppo attuale: %s"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:950
+#: includes/classes/class-wcb2b-frontend-products.php:723
+msgid "Discount amount assigned to you: %s%%"
+msgstr "Sconto a te destinato: %s%%"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:967
+#: includes/classes/class-wcb2b-frontend-myaccount.php:981
+msgid "Saved carts"
+msgstr "Carrelli salvati"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:1006
+msgid "Order again"
+msgstr "Ordina di nuovo"
+
+#: includes/classes/class-wcb2b-frontend-myaccount.php:1046
+msgid ""
+"You are not allowed to change billing address, you can only enter missing "
+"data."
+msgstr ""
+"Non è consentito modificare l’indirizzo di fatturazione, è possibile solo "
+"inserire i dati mancanti."
+
+#: includes/classes/class-wcb2b-frontend-products.php:96
+msgid "You can't have more than %s of this product in cart"
+msgstr "Non puoi avere più di %s di questo prodotto nel carrello"
+
+#: includes/classes/class-wcb2b-frontend-products.php:350
+msgid "No results matching your search"
+msgstr "Nessun risultato corrisponde alla tua ricerca"
+
+#: includes/classes/class-wcb2b-frontend-products.php:897
+msgid "Shipping Informations"
+msgstr "Informazioni sulla spedizione"
+
+#: includes/classes/class-wcb2b-frontend-products.php:919
+msgid "Your purchase history"
+msgstr "La tua cronologia acquisti"
+
+#: includes/classes/class-wcb2b-frontend-products.php:936
+msgid "Estimated delivery: %s"
+msgstr "Consegna prevista: %s"
+
+#: includes/classes/class-wcb2b-frontend-products.php:955
+msgid "Shipping class: %s"
+msgstr "Classe spedizione: %s"
+
+#: includes/classes/class-wcb2b-frontend.php:91
+msgid "Added to cart"
+msgstr "Aggiunto al carrello"
+
+#: includes/classes/class-wcb2b-hooks.php:195
+#: includes/classes/class-wcb2b-hooks.php:228
+msgid "Awaiting invoice payment"
+msgstr "In attesa di pagamento fattura"
+
+#: includes/classes/class-wcb2b-hooks.php:200
+msgid "Awaiting invoice payment <span class=\"count\">(%s)</span>"
+msgid_plural "Awaiting invoice payment <span class=\"count\">(%s)</span>"
+msgstr[0] "In attesa di pagamento fattura <span class=“count”>(%s)</span>"
+msgstr[1] "In attesa di pagamento fattura <span class=“count”>(%s)</span>"
+
+#: includes/classes/class-wcb2b-hooks.php:203
+#: includes/classes/class-wcb2b-hooks.php:229
+msgid "On quote"
+msgstr "Preventivo in elaborazione"
+
+#: includes/classes/class-wcb2b-hooks.php:208
+msgid "On quote <span class=\"count\">(%s)</span>"
+msgid_plural "On quote <span class=\"count\">(%s)</span>"
+msgstr[0] "Preventivo in elaborazione <span class=“count”>(%s)</span>"
+msgstr[1] "Preventivi in elaborazione <span class=“count”>(%s)</span>"
+
+#: includes/classes/class-wcb2b-hooks.php:211
+#: includes/classes/class-wcb2b-hooks.php:230
+msgid "Quoted"
+msgstr "Preventivo elaborato"
+
+#: includes/classes/class-wcb2b-hooks.php:216
+msgid "Quoted <span class=\"count\">(%s)</span>"
+msgid_plural "Quoted <span class=\"count\">(%s)</span>"
+msgstr[0] "Preventivo elaborato <span class=“count”>(%s)</span>"
+msgstr[1] "Preventivi elaborati <span class=“count”>(%s)</span>"
+
+#: includes/classes/class-wcb2b-hooks.php:309
+msgid "Purchase Order number"
+msgstr "Numero ordine di acquisto"
+
+#: includes/classes/class-wcb2b-hooks.php:489
+msgid ""
+"We are checking your account, please wait for the activation confirmation "
+"email before trying to login"
+msgstr ""
+"Stiamo controllando il tuo account, attendi l’email di conferma attivazione "
+"prima di provare ad accedere"
+
+#: includes/classes/class-wcb2b-hooks.php:657
+#: includes/classes/class-wcb2b-hooks.php:721
+#: includes/classes/class-wcb2b-hooks.php:727
+msgid "Vat number"
+msgstr "Partita IVA"
+
+#: includes/classes/class-wcb2b-hooks.php:722
+msgid "Vat number (optional)"
+msgstr "Partita IVA (opzionale)"
+
+#: includes/classes/class-wcb2b-hooks.php:738
+msgid "Email address for invoices (optional)"
+msgstr "Indirizzo email per fatture (opzionale)"
+
+#: includes/classes/class-wcb2b-hooks.php:804
+#: includes/classes/class-wcb2b-hooks.php:821
+msgid "Delivery days (min)"
+msgstr "Giorni per consegna (min)"
+
+#: includes/classes/class-wcb2b-hooks.php:805
+#: includes/classes/class-wcb2b-hooks.php:827
+msgid "Delivery days (max)"
+msgstr "Giorni per consegna (max)"
+
+#: includes/classes/class-wcb2b-install.php:254
+msgid "Guest"
+msgstr "Ospite"
+
+#: includes/classes/class-wcb2b-install.php:293
+msgid "Quick order"
+msgstr "Ordine rapido"
+
+#: includes/classes/class-wcb2b-post_types.php:47
+msgid "Groups"
+msgstr "Gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:49
+msgid "All Groups"
+msgstr "Tutti i gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:51
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+#: includes/classes/class-wcb2b-post_types.php:52
+msgid "Add new group"
+msgstr "Aggiungi nuovo gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:53
+msgid "Edit"
+msgstr "Modifica"
+
+#: includes/classes/class-wcb2b-post_types.php:54
+msgid "Edit group"
+msgstr "Modifica gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:55
+msgid "New group"
+msgstr "Nuovo gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:56
+msgid "View group"
+msgstr "Visualizza gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:57
+msgid "View groups"
+msgstr "Visualizza gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:58
+msgid "Search groups"
+msgstr "Cerca gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:59
+msgid "No groups found"
+msgstr "Nessun gruppo trovato"
+
+#: includes/classes/class-wcb2b-post_types.php:60
+msgid "No groups found in trash"
+msgstr "Nessun gruppo trovato nel cestino"
+
+#: includes/classes/class-wcb2b-post_types.php:61
+msgid "Parent group"
+msgstr "Gruppo genitore"
+
+#: includes/classes/class-wcb2b-post_types.php:62
+msgid "Group image"
+msgstr "Immagine del gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:63
+msgid "Set group image"
+msgstr "Imposta immagine gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:64
+msgid "Remove group image"
+msgstr "Rimuovi immagine"
+
+#: includes/classes/class-wcb2b-post_types.php:65
+msgid "Use as group image"
+msgstr "Usa come immagine gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:66
+msgid "Insert into group"
+msgstr "Inserisci nel gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:67
+msgid "Uploaded to this group"
+msgstr "Caricate su questo gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:68
+msgid "Filter groups"
+msgstr "Filtra gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:69
+msgid "Groups navigation"
+msgstr "Navigazione gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:70
+msgid "Groups list"
+msgstr "Lista gruppi"
+
+#: includes/classes/class-wcb2b-post_types.php:74
+msgid "This is where you can add new groups to your customers."
+msgstr "Qui è dove puoi aggiungere nuovi gruppi ai tuoi clienti."
+
+#: includes/classes/class-wcb2b-post_types.php:99
+msgid "ID: %d"
+msgstr "ID: %d"
+
+#: includes/classes/class-wcb2b-post_types.php:113
+msgid "Price & Tax settings"
+msgstr "Impostazioni prezzi e tasse"
+
+#: includes/classes/class-wcb2b-post_types.php:124
+msgid "Manage prices"
+msgstr "Gestisci prezzi"
+
+#: includes/classes/class-wcb2b-post_types.php:133
+#: includes/classes/class-wcb2b-post_types.php:1478
+#: includes/classes/class-wcb2b-post_types.php:1882
+msgid "Hide prices"
+msgstr "Nascondi prezzi"
+
+#: includes/classes/class-wcb2b-post_types.php:134
+msgid "Hide prices for all products"
+msgstr "Nascondi i prezzi per tutti i prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:135
+msgid ""
+"If enabled, price is replaced by a message linked to login page for "
+"customers in this group."
+msgstr ""
+"Se abilitato, il prezzo viene sostituito da un messaggio collegato alla "
+"pagina di accesso per i clienti di questo gruppo."
+
+#: includes/classes/class-wcb2b-post_types.php:153
+msgid "Allow quotations"
+msgstr "Consenti preventivi"
+
+#: includes/classes/class-wcb2b-post_types.php:154
+msgid "Allow quotations even if prices are hidden."
+msgstr "Consenti preventivi anche se i prezzi sono nascosti"
+
+#: includes/classes/class-wcb2b-post_types.php:155
+msgid "Please be sure quotations payment gateway is enabled."
+msgstr ""
+"Assicurati che il metodo di pagamento richiesta di preventivo sia abilitato."
+
+#: includes/classes/class-wcb2b-post_types.php:171
+msgid "Show prices assigned to single product"
+msgstr "Mostra i prezzi assegnati al singolo prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:172
+msgid "Show default prices discounted by customer group percentage"
+msgstr ""
+"Mostra i prezzi predefiniti scontati per percentuale del gruppo di clienti"
+
+#: includes/classes/class-wcb2b-post_types.php:173
+msgid ""
+"Show prices assigned to single product discounted by customer group "
+"percentage"
+msgstr ""
+"Mostra i prezzi assegnati al singolo prodotto scontati per percentuale del "
+"gruppo di clienti"
+
+#: includes/classes/class-wcb2b-post_types.php:177
+msgid "Price rules"
+msgstr "Regole prezzi"
+
+#: includes/classes/class-wcb2b-post_types.php:179
+msgid ""
+"Choose how to manage the different price lists. For option (1) you can set "
+"the prices in each product, for options (2) and (3) you can set the "
+"percentage discount below."
+msgstr ""
+"Scegli come gestire i diversi listini. Per l’opzione (1) è possibile "
+"impostare i prezzi in ciascun prodotto, per le opzioni (2) e (3) è possibile "
+"impostare la percentuale di sconto di seguito."
+
+#: includes/classes/class-wcb2b-post_types.php:200
+msgid "Global discount (%)"
+msgstr "Sconto globale (%)"
+
+#: includes/classes/class-wcb2b-post_types.php:202
+msgid ""
+"This should be a number with up to 2 decimal places, with (.) as decimal "
+"separator."
+msgstr ""
+"Dovrebbe essere un numero con al massimo di 2 posizioni decimali, con (.) "
+"come separatore decimale."
+
+#: includes/classes/class-wcb2b-post_types.php:217
+msgid "Price suffix"
+msgstr "Suffisso prezzo"
+
+#: includes/classes/class-wcb2b-post_types.php:219
+msgid ""
+"Define text to show after your product prices. This could be, for example, "
+"\"inc. Vat\" to explain your pricing. You can also have prices substituted "
+"here using one of the following: {price_including_tax}, "
+"{price_excluding_tax}."
+msgstr ""
+"Definisci il testo da mostrare dopo i prezzi dei tuoi prodotti. Questo "
+"potrebbe essere, ad esempio, “IVA inclusa” per spiegare il tuo prezzo. Puoi "
+"anche far sostituire i prezzi qui utilizzando uno dei seguenti: "
+"{price_inclusive_tax}, {price_exclusive_tax}."
+
+#: includes/classes/class-wcb2b-post_types.php:231
+msgid "Manage taxes"
+msgstr "Gestisci tasse"
+
+#: includes/classes/class-wcb2b-post_types.php:240
+#: includes/classes/class-wcb2b-post_types.php:1611
+#: includes/classes/class-wcb2b-post_types.php:1850
+msgid "-- As globally defined --"
+msgstr "— Come definito globalmente —"
+
+#: includes/classes/class-wcb2b-post_types.php:241
+#: includes/classes/class-wcb2b-post_types.php:1614
+#: includes/classes/class-wcb2b-post_types.php:1851
+msgid "Including tax"
+msgstr "Tass incluse"
+
+#: includes/classes/class-wcb2b-post_types.php:242
+#: includes/classes/class-wcb2b-post_types.php:1617
+#: includes/classes/class-wcb2b-post_types.php:1852
+msgid "Excluding tax"
+msgstr "Tasse escluse"
+
+#: includes/classes/class-wcb2b-post_types.php:246
+#: includes/classes/class-wcb2b-post_types.php:1481
+#: includes/classes/class-wcb2b-post_types.php:1861
+msgid "Display prices"
+msgstr "Visualizza prezzi"
+
+#: includes/classes/class-wcb2b-post_types.php:268
+#: includes/classes/class-wcb2b-post_types.php:1482
+#: includes/classes/class-wcb2b-post_types.php:1924
+msgid "Tax exemption"
+msgstr "Esenzione tasse"
+
+#: includes/classes/class-wcb2b-post_types.php:269
+msgid "Enable tax exemption"
+msgstr "Abilita esenzione tasse"
+
+#: includes/classes/class-wcb2b-post_types.php:270
+msgid "If enabled, customers in this group can purchase with no taxes."
+msgstr ""
+"Se abilitato, i clienti di questo gruppo possono acquistare senza tasse."
+
+#: includes/classes/class-wcb2b-post_types.php:286
+#: includes/classes/settings/class-wcb2b-settings.php:147
+msgid "Cart & Checkout settings"
+msgstr "Impostazioni Carrello & Cassa"
+
+#: includes/classes/class-wcb2b-post_types.php:297
+msgid "Manage totals"
+msgstr "Gestisci totali"
+
+#: includes/classes/class-wcb2b-post_types.php:311
+msgid "Amount"
+msgstr "Importo"
+
+#: includes/classes/class-wcb2b-post_types.php:312
+msgid "Percentage"
+msgstr "Percentuale"
+
+#: includes/classes/class-wcb2b-post_types.php:316
+msgid "Package fee"
+msgstr "Tariffa di imballaggio"
+
+#: includes/classes/class-wcb2b-post_types.php:318
+msgid ""
+"Add a packaging fee to checkout. Fee amount should be a number with up to 2 "
+"decimal places, with (.) as decimal separator."
+msgstr ""
+"Aggiungi una tariffa di imballaggio al checkout. L’importo della tariffa "
+"deve essere un numero con un massimo di 2 cifre decimali, con (.) come "
+"separatore decimale."
+
+#: includes/classes/class-wcb2b-post_types.php:329
+msgid "Fee amount"
+msgstr "Importo tariffa"
+
+#: includes/classes/class-wcb2b-post_types.php:339
+msgid "Manage purchases"
+msgstr "Gestisci acquisti"
+
+#: includes/classes/class-wcb2b-post_types.php:348
+#: includes/classes/class-wcb2b-post_types.php:1472
+#: includes/classes/class-wcb2b-post_types.php:2348
+msgid "Catalog mode"
+msgstr "Modalità catalogo"
+
+#: includes/classes/class-wcb2b-post_types.php:349
+msgid "Use shop pages as catalog"
+msgstr "Usa le pagine del negozio come catalogo"
+
+#: includes/classes/class-wcb2b-post_types.php:350
+msgid ""
+"If enabled, remove add to cart and purchase capabilities, with visible "
+"prices."
+msgstr ""
+"Se abilitato, rimuove le funzionalità di aggiunta al carrello e di acquisto, "
+"con prezzi visibili."
+
+#: includes/classes/class-wcb2b-post_types.php:364
+#: includes/classes/class-wcb2b-post_types.php:1473
+msgid "Min purchase amount"
+msgstr "Importo minimo d’acquisto"
+
+#: includes/classes/class-wcb2b-post_types.php:366
+msgid "Customers can purchase only if cart amount is greater than this value."
+msgstr ""
+"I clienti possono acquistare solo se l’importo del carrello è superiore a "
+"questo valore."
+
+#: includes/classes/class-wcb2b-post_types.php:381
+#: includes/classes/class-wcb2b-post_types.php:1474
+#: includes/classes/class-wcb2b-post_types.php:2369
+msgid "Min purchase alert"
+msgstr "Avviso di acquisto minimo"
+
+#: includes/classes/class-wcb2b-post_types.php:382
+msgid "Enable min purchase alert in cart page"
+msgstr "Abilita l’avviso di acquisto minimo nella pagina del carrello"
+
+#: includes/classes/class-wcb2b-post_types.php:383
+msgid ""
+"Display a message in the shopping cart page to alert that minimum amount "
+"isn't reached yet."
+msgstr ""
+"Visualizza un messaggio nella pagina del carrello per avvisare che l’importo "
+"minimo non è ancora stato raggiunto."
+
+#: includes/classes/class-wcb2b-post_types.php:398
+#: includes/classes/class-wcb2b-post_types.php:2390
+msgid "Min purchase checkout button"
+msgstr "Pulsante checkout acquisto minimo"
+
+#: includes/classes/class-wcb2b-post_types.php:399
+msgid "Disable checkout button in cart page"
+msgstr "Disabilita il pulsante di pagamento nella pagina del carrello"
+
+#: includes/classes/class-wcb2b-post_types.php:400
+msgid ""
+"Remove \"Proceed to checkout\" button in shopping cart if the minimum amount "
+"isn't reached yet."
+msgstr ""
+"Rimuovi il pulsante “Procedi alla cassa” nel carrello se l’importo minimo "
+"non è ancora stato raggiunto."
+
+#: includes/classes/class-wcb2b-post_types.php:415
+msgid "Save cart button"
+msgstr "Pulsante salva carrello"
+
+#: includes/classes/class-wcb2b-post_types.php:416
+msgid "Enable save cart button in cart page"
+msgstr "Abilita il pulsante di salva carrello nella pagina del carrello"
+
+#: includes/classes/class-wcb2b-post_types.php:417
+msgid "Allow customers to save their cart for later."
+msgstr "Consenti ai clienti di salvare il proprio carrello per dopo."
+
+#: includes/classes/class-wcb2b-post_types.php:432
+#: includes/classes/class-wcb2b-post_types.php:1477
+#: includes/classes/class-wcb2b-post_types.php:2432
+msgid "Show coupons"
+msgstr "Mostra coupon"
+
+#: includes/classes/class-wcb2b-post_types.php:433
+msgid "Enable public coupons list in cart page"
+msgstr "Abilita l’elenco dei coupon pubblici nella pagina del carrello"
+
+#: includes/classes/class-wcb2b-post_types.php:434
+msgid "List available public coupons in cart page for this group."
+msgstr ""
+"Elenca i coupon pubblici disponibili nella pagina del carrello per questo "
+"gruppo."
+
+#: includes/classes/class-wcb2b-post_types.php:448
+msgid "New order email recipients"
+msgstr "Destinatari email nuovo ordine"
+
+#: includes/classes/class-wcb2b-post_types.php:450
+msgid ""
+"Insert additional email recipients (separated by comma) you want to receive "
+"new order email copy."
+msgstr ""
+"Inserisci ulteriori destinatari email (separati da virgola) ai quali "
+"desideri ricevere la copia della email di nuovo ordine."
+
+#: includes/classes/class-wcb2b-post_types.php:470
+msgid "Disabled payment methods"
+msgstr "Metodi di pagamento disabilitati"
+
+#: includes/classes/class-wcb2b-post_types.php:510
+msgid "Disabled shipping methods"
+msgstr "Metodo di spedizione disabilitati"
+
+#: includes/classes/class-wcb2b-post_types.php:530
+msgid "Defined in \"%s\" zone"
+msgstr "Definito nella zona “%s”"
+
+#: includes/classes/class-wcb2b-post_types.php:545
+#: includes/classes/class-wcb2b-post_types.php:600
+#: includes/classes/class-wcb2b-post_types.php:927
+#: includes/classes/class-wcb2b-post_types.php:1010
+#: includes/classes/class-wcb2b-post_types.php:1108
+msgid "Manage additional informations"
+msgstr "Gestisci informazioni aggiuntive"
+
+#: includes/classes/class-wcb2b-post_types.php:570
+#: includes/classes/class-wcb2b-post_types.php:1127
+msgid "Terms&Conditions"
+msgstr "Termini&Condizioni"
+
+#: includes/classes/class-wcb2b-post_types.php:572
+msgid "You can add this content by using the shortcode %s."
+msgstr "Puoi aggiungere questo contenuto utilizzando lo shortcode %s."
+
+#: includes/classes/class-wcb2b-post_types.php:589
+msgid "Shop & Products settings"
+msgstr "Impostazioni negozio e prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:609
+#: includes/classes/class-wcb2b-post_types.php:1490
+#: includes/classes/class-wcb2b-post_types.php:2096
+msgid "Show delivery time"
+msgstr "Mostra i tempi di consegna"
+
+#: includes/classes/class-wcb2b-post_types.php:610
+msgid "Enable delivery time displaying"
+msgstr "Abilita la visualizzazione dei tempi di consegna"
+
+#: includes/classes/class-wcb2b-post_types.php:611
+msgid ""
+"If enabled, customers in this group can see the min/max days to delivery as "
+"set in each product."
+msgstr ""
+"Se abilitato, i clienti in questo gruppo possono vedere i giorni min/max "
+"alla consegna impostati in ciascun prodotto."
+
+#: includes/classes/class-wcb2b-post_types.php:625
+msgid "Shipping class"
+msgstr "Classe spedizione"
+
+#: includes/classes/class-wcb2b-post_types.php:626
+msgid "Display shipping class in the product page"
+msgstr "Visualizza la classe di spedizione nella pagina del prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:642
+msgid "Display barcode in the product page"
+msgstr "Visualizza il codice a barre nella pagina dettagli prodotto."
+
+#: includes/classes/class-wcb2b-post_types.php:657
+msgid "RRP"
+msgstr "RRP"
+
+#: includes/classes/class-wcb2b-post_types.php:658
+msgid "Show recommended retail price (RRP)"
+msgstr "Mostra il prezzo di vendita consigliato (RRP)"
+
+#: includes/classes/class-wcb2b-post_types.php:659
+msgid "Show default product regular price as recommended retail price (RRP)."
+msgstr ""
+"Mostra il prezzo predefinito del prodotto come prezzo di vendita consigliato "
+"(RRP)."
+
+#: includes/classes/class-wcb2b-post_types.php:673
+#: includes/classes/class-wcb2b-post_types.php:2180
+msgid "Already bought"
+msgstr "Già acquistato"
+
+#: includes/classes/class-wcb2b-post_types.php:674
+msgid "Enable \"Already bought\" message in product page"
+msgstr "Mostra il messaggio “Già acquistato” nella pagina prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:675
+msgid ""
+"Show a warning if the current customer has already purchased the product "
+"before."
+msgstr ""
+"Mostra un avviso se il cliente attuale ha già acquistato il prodotto in "
+"precedenza."
+
+#: includes/classes/class-wcb2b-post_types.php:689
+msgid "Total sales"
+msgstr "Vendite totali"
+
+#: includes/classes/class-wcb2b-post_types.php:690
+msgid "Show product total sales in product page"
+msgstr "Mostra le vendite totali del prodotto nella pagina prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:691
+msgid ""
+"Displays a notice indicating the number of times the product has been sold."
+msgstr ""
+"Visualizza un avviso che indica il numero di volte in cui il prodotto è "
+"stato venduto."
+
+#: includes/classes/class-wcb2b-post_types.php:705
+msgid "Shippings tab"
+msgstr "Scheda spedizioni"
+
+#: includes/classes/class-wcb2b-post_types.php:706
+msgid "Show shippings tab in product page"
+msgstr "Mostra la scheda delle spedizioni nella pagina prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:707
+msgid ""
+"Shows an additional tab on the product page which describes the active "
+"shipping methods based on the current customer's group."
+msgstr ""
+"Mostra una scheda aggiuntiva sulla pagina del prodotto che descrive i metodi "
+"di spedizione attivi in base al gruppo del cliente corrente."
+
+#: includes/classes/class-wcb2b-post_types.php:721
+msgid "Purchase history tab"
+msgstr "Scheda cronologia acquisti"
+
+#: includes/classes/class-wcb2b-post_types.php:722
+msgid "Show purchase history tab in product page"
+msgstr ""
+"Mostra la scheda della cronologia degli acquisti nella pagina del prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:723
+msgid ""
+"Shows an additional tab on the product page listing customer previous "
+"purchases for this product."
+msgstr ""
+"Mostra una scheda aggiuntiva sulla pagina del prodotto che elenca gli "
+"acquisti precedenti del cliente per questo prodotto."
+
+#: includes/classes/class-wcb2b-post_types.php:740
+msgid "Login/Registration & MyAccount settings"
+msgstr "Impostazioni di login/registrazione e mio account"
+
+#: includes/classes/class-wcb2b-post_types.php:751
+msgid "Manage fields"
+msgstr "Gestisci campi"
+
+#: includes/classes/class-wcb2b-post_types.php:760
+#: includes/classes/class-wcb2b-post_types.php:788
+#: includes/classes/class-wcb2b-post_types.php:846
+#: includes/classes/class-wcb2b-post_types.php:1625
+#: includes/classes/class-wcb2b-post_types.php:1639
+#: includes/classes/class-wcb2b-post_types.php:1667
+#: includes/classes/class-wcb2b-post_types.php:1935
+#: includes/classes/class-wcb2b-post_types.php:1957
+#: includes/classes/class-wcb2b-post_types.php:2001
+#: includes/classes/settings/class-wcb2b-settings.php:161
+#: includes/classes/settings/class-wcb2b-settings.php:176
+msgid "Hidden"
+msgstr "Nascosto"
+
+#: includes/classes/class-wcb2b-post_types.php:761
+#: includes/classes/class-wcb2b-post_types.php:789
+#: includes/classes/class-wcb2b-post_types.php:847
+#: includes/classes/class-wcb2b-post_types.php:1628
+#: includes/classes/class-wcb2b-post_types.php:1642
+#: includes/classes/class-wcb2b-post_types.php:1670
+#: includes/classes/class-wcb2b-post_types.php:1936
+#: includes/classes/class-wcb2b-post_types.php:1958
+#: includes/classes/class-wcb2b-post_types.php:2002
+#: includes/classes/settings/class-wcb2b-settings.php:162
+#: includes/classes/settings/class-wcb2b-settings.php:177
+msgid "Optional"
+msgstr "Opzionale"
+
+#: includes/classes/class-wcb2b-post_types.php:762
+#: includes/classes/class-wcb2b-post_types.php:790
+#: includes/classes/class-wcb2b-post_types.php:848
+#: includes/classes/class-wcb2b-post_types.php:1631
+#: includes/classes/class-wcb2b-post_types.php:1645
+#: includes/classes/class-wcb2b-post_types.php:1673
+#: includes/classes/class-wcb2b-post_types.php:1937
+#: includes/classes/class-wcb2b-post_types.php:1959
+#: includes/classes/class-wcb2b-post_types.php:2003
+#: includes/classes/settings/class-wcb2b-settings.php:163
+#: includes/classes/settings/class-wcb2b-settings.php:178
+msgid "Required"
+msgstr "Obbligatorio"
+
+#: includes/classes/class-wcb2b-post_types.php:768
+msgid ""
+"Add an additional field to registration form dedicated to this group, to "
+"allow customers to communicate email address where they prefer to receive "
+"invoices."
+msgstr ""
+"Aggiungi un ulteriore campo al form di registrazione dedicato a questo "
+"gruppo, per permettere ai clienti di comunicare l’indirizzo email dove "
+"preferiscono ricevere le fatture."
+
+#: includes/classes/class-wcb2b-post_types.php:796
+msgid ""
+"Add an additional field to registration form dedicated to this group, to "
+"allow customers to communicate their VAT number"
+msgstr ""
+"Aggiungi un ulteriore campo al modulo di registrazione dedicato a questo "
+"gruppo, per consentire ai clienti di comunicare la propria partita IVA"
+
+#: includes/classes/class-wcb2b-post_types.php:817
+#: includes/classes/class-wcb2b-post_types.php:1653
+#: includes/classes/class-wcb2b-post_types.php:1979
+#: includes/classes/settings/class-wcb2b-settings.php:192
+msgid "Disabled"
+msgstr "Disabilitato"
+
+#: includes/classes/class-wcb2b-post_types.php:818
+msgid "Enabled (Strict - block registration if error occurs)"
+msgstr "Abilitato (Severo: blocca la registrazione se si verifica un errore)"
+
+#: includes/classes/class-wcb2b-post_types.php:819
+msgid "Enabled (Lax - don't block registration if error occurs)"
+msgstr ""
+"Abilitato (Leggero: non blocca la registrazione se si verifica un errore)"
+
+#: includes/classes/class-wcb2b-post_types.php:823
+#: includes/classes/class-wcb2b-post_types.php:1485
+#: includes/classes/class-wcb2b-post_types.php:1990
+#: includes/classes/settings/class-wcb2b-settings.php:184
+msgid "VIES validation"
+msgstr "Validazione VIES"
+
+#: includes/classes/class-wcb2b-post_types.php:825
+msgid "Enable VIES validation on this group in registration"
+msgstr "Abilita la validazione VIES su questo gruppo in fase di registrazione"
+
+#: includes/classes/class-wcb2b-post_types.php:852
+#: includes/views/html-admin-user.php:94
+#: templates/myaccount/business-certificate-field.php:14
+msgid "Business certificate"
+msgstr "Certificato di attività"
+
+#: includes/classes/class-wcb2b-post_types.php:854
+msgid ""
+"Add an additional field to registration form dedicated to this group and in "
+"\"My account -> Account details\" page, to allow customers to upload "
+"business certificate."
+msgstr ""
+"Aggiungi un campo aggiuntivo al modulo di registrazione dedicato a questo "
+"gruppo e nella pagina “Il mio account -> Dettagli account”, per consentire "
+"ai clienti di caricare il certificato di attività."
+
+#: includes/classes/class-wcb2b-post_types.php:872
+msgid "Manage accounts"
+msgstr "Gestisci accounts"
+
+#: includes/classes/class-wcb2b-post_types.php:881
+#: includes/classes/class-wcb2b-post_types.php:1487
+#: includes/classes/class-wcb2b-post_types.php:2033
+msgid "Extend registration fields"
+msgstr "Estendi i campi di registrazione"
+
+#: includes/classes/class-wcb2b-post_types.php:882
+msgid "Add billing fields to registration form dedicated to this group"
+msgstr ""
+"Aggiungi i campi di fatturazione al modulo di registrazione dedicato a "
+"questo gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:883
+msgid ""
+"To show registration form, you need to enable the option \"Allow customers "
+"to create an account on the 'My account' page\" in \"Accounts & Privacy\" "
+"tab under WooCommerce settings"
+msgstr ""
+"Per mostrare il modulo di registrazione, devi abilitare l’opzione “Consenti "
+"ai clienti di creare un account nella pagina ‘Account personale’” nella tab "
+"Account e privacy nelle impostazioni di WooCommerce"
+
+#: includes/classes/class-wcb2b-post_types.php:897
+#: includes/classes/class-wcb2b-post_types.php:1488
+#: includes/classes/class-wcb2b-post_types.php:2054
+msgid "Moderate registration"
+msgstr "Registrazione moderata"
+
+#: includes/classes/class-wcb2b-post_types.php:898
+msgid "Enable login only after admin approval"
+msgstr "Abilita l’accesso solo dopo l’approvazione dell’amministratore"
+
+#: includes/classes/class-wcb2b-post_types.php:899
+msgid ""
+"Customers belonging to this group will only be able to login if their "
+"account has been approved by an administrator."
+msgstr ""
+"I clienti appartenenti a questo gruppo potranno accedere solo se il loro "
+"account è stato approvato da un amministratore."
+
+#: includes/classes/class-wcb2b-post_types.php:913
+#: includes/classes/class-wcb2b-post_types.php:1489
+#: includes/classes/class-wcb2b-post_types.php:2075
+msgid "Blocked billing address"
+msgstr "Indirizzo di fatturazione bloccato"
+
+#: includes/classes/class-wcb2b-post_types.php:914
+msgid "Disable billing address change"
+msgstr "Disabilita la modifica dell’indirizzo di fatturazione"
+
+#: includes/classes/class-wcb2b-post_types.php:915
+msgid ""
+"Disable the ability to change your billing address for customers in this "
+"group."
+msgstr ""
+"Disattiva la possibilità di modificare l’indirizzo di fatturazione per i "
+"clienti di questo gruppo."
+
+#: includes/classes/class-wcb2b-post_types.php:936
+#: includes/views/html-admin-user.php:86
+msgid "Unpaid amount"
+msgstr "Importo non pagato"
+
+#: includes/classes/class-wcb2b-post_types.php:937
+msgid "Show unpaid total orders amount in customer own account area"
+msgstr ""
+"Mostra l’importo totale degli ordini non pagati nell’area del conto del "
+"cliente"
+
+#: includes/classes/class-wcb2b-post_types.php:953
+msgid "Show assigned group in customer own account area"
+msgstr "Mostra il gruppo assegnato nell’area dell’account del cliente"
+
+#: includes/classes/class-wcb2b-post_types.php:968
+msgid "Discount % in myaccount"
+msgstr "% di sconto nel mio account"
+
+#: includes/classes/class-wcb2b-post_types.php:969
+msgid ""
+"Customers can view discount amount assigned to them in their own account area"
+msgstr ""
+"I clienti possono visualizzare la percentuale di sconto ad essi destinata "
+"nella propria pagina profilo"
+
+#: includes/classes/class-wcb2b-post_types.php:982
+msgid "Discount % in products"
+msgstr "% di sconto nei prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:983
+msgid ""
+"Customers can view discount amount assigned to them in single product page"
+msgstr ""
+"I clienti possono visualizzare la percentuale di sconto ad essi destinata "
+"nella pagina del prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:1001
+msgid "Visibility summary"
+msgstr "Riepilogo visibilità"
+
+#: includes/classes/class-wcb2b-post_types.php:1020
+msgid "Product categories visibility"
+msgstr "Visibilità categorie prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:1047
+msgid "Product brands visibility"
+msgstr "Visibilità brands prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:1070
+msgid "Pages visibility"
+msgstr "Visibilità pagine"
+
+#: includes/classes/class-wcb2b-post_types.php:1099
+msgid "Shortcodes summary"
+msgstr "Riepilogo shortcode"
+
+#: includes/classes/class-wcb2b-post_types.php:1113
+msgid "Restricted contents"
+msgstr "Contenuti limitati"
+
+#: includes/classes/class-wcb2b-post_types.php:1115
+msgid "Allow content visibility only to this group."
+msgstr "Consenti la visibilità dei contenuti solo a questo gruppo."
+
+#: includes/classes/class-wcb2b-post_types.php:1120
+msgid "B2B login/registration forms"
+msgstr "Form di login/registrazione B2B"
+
+#: includes/classes/class-wcb2b-post_types.php:1122
+msgid "Allow to add a login/registration form dedicated to this group."
+msgstr ""
+"Consenti di aggiungere un modulo di accesso/registrazione dedicato a questo "
+"gruppo."
+
+#: includes/classes/class-wcb2b-post_types.php:1129
+msgid ""
+"Allow to add dedicated Terms&Conditions contents according to customer group."
+msgstr ""
+"Consenti di aggiungere contenuti Termini&Condizioni dedicati in base al "
+"gruppo di clienti."
+
+#: includes/classes/class-wcb2b-post_types.php:1470
+msgid "Discount (%)"
+msgstr "Sconto (%)"
+
+#: includes/classes/class-wcb2b-post_types.php:1475
+msgid "Min purchase button"
+msgstr "Pulsante di acquisto minimo"
+
+#: includes/classes/class-wcb2b-post_types.php:1479
+#: includes/classes/class-wcb2b-post_types.php:1903
+msgid "Allow quotations with hidden prices"
+msgstr "Consenti preventivi con prezzi nascosti"
+
+#: includes/classes/class-wcb2b-post_types.php:1480
+#: includes/classes/class-wcb2b-post_types.php:1839
+msgid "Price rule"
+msgstr "Regole prezzo"
+
+#: includes/classes/class-wcb2b-post_types.php:1483
+#: includes/classes/class-wcb2b-post_types.php:1946
+msgid "Add invoice email"
+msgstr "Aggiungi email di fatturazione"
+
+#: includes/classes/class-wcb2b-post_types.php:1484
+#: includes/classes/class-wcb2b-post_types.php:1968
+msgid "Add VAT number"
+msgstr "Aggiungi Partita IVA"
+
+#: includes/classes/class-wcb2b-post_types.php:1486
+#: templates/myaccount/business-certificate-field.php:21
+msgid "Add business certificate"
+msgstr "Aggiungi certificato di attività"
+
+#: includes/classes/class-wcb2b-post_types.php:1491
+#: includes/classes/class-wcb2b-post_types.php:2117
+msgid "Show shipping class"
+msgstr "Mostra la classe di spedizione"
+
+#: includes/classes/class-wcb2b-post_types.php:1492
+#: includes/classes/class-wcb2b-post_types.php:2138
+msgid "Show barcode"
+msgstr "Mostra codice a barre"
+
+#: includes/classes/class-wcb2b-post_types.php:1493
+#: includes/classes/class-wcb2b-post_types.php:2159
+msgid "Show RRP"
+msgstr "Mostra RRP"
+
+#: includes/classes/class-wcb2b-post_types.php:1494
+msgid "Show already bought"
+msgstr "Mostra il messaggio “Già acquistato”"
+
+#: includes/classes/class-wcb2b-post_types.php:1495
+#: includes/classes/class-wcb2b-post_types.php:2201
+msgid "Show products sales"
+msgstr "Mostra le vendite nei prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:1496
+#: includes/classes/class-wcb2b-post_types.php:2222
+msgid "Show products shippings tab"
+msgstr "Mostra la scheda delle spedizioni nei prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:1497
+#: includes/classes/class-wcb2b-post_types.php:2243
+msgid "Show products purchase history tab"
+msgstr "Mostra scheda cronologia acquisti prodotti"
+
+#: includes/classes/class-wcb2b-post_types.php:1498
+#: includes/classes/class-wcb2b-post_types.php:2264
+msgid "Show unpaid amount"
+msgstr "Mostra importo non pagato"
+
+#: includes/classes/class-wcb2b-post_types.php:1499
+#: includes/classes/class-wcb2b-post_types.php:2285
+msgid "Show customer group"
+msgstr "Mostra gruppo cliente"
+
+#: includes/classes/class-wcb2b-post_types.php:1500
+#: includes/classes/class-wcb2b-post_types.php:2306
+msgid "Show discount % in myaccount"
+msgstr "Mostra sconto % nel mio account"
+
+#: includes/classes/class-wcb2b-post_types.php:1501
+#: includes/classes/class-wcb2b-post_types.php:2327
+msgid "Show discount % in product"
+msgstr "Mostra sconto % nel prodotto"
+
+#: includes/classes/class-wcb2b-post_types.php:1502
+msgid "Allowed payment methods"
+msgstr "Metodi di pagamento consentiti"
+
+#: includes/classes/class-wcb2b-post_types.php:1503
+msgid "Allowed shipping methods"
+msgstr "Metodo di spedizione consentiti"
+
+#: includes/classes/class-wcb2b-post_types.php:1518
+#: includes/classes/class-wcb2b-post_types.php:1828
+msgid "Group dedicated price"
+msgstr "Prezzo dedicato per gruppo"
+
+#: includes/classes/class-wcb2b-post_types.php:1521
+#: includes/classes/class-wcb2b-post_types.php:1829
+msgid "Group discount on default price"
+msgstr "Sconto per gruppo sul prezzo predefinito"
+
+#: includes/classes/class-wcb2b-post_types.php:1524
+#: includes/classes/class-wcb2b-post_types.php:1830
+msgid "Group discount on dedicated price"
+msgstr "Sconto per gruppo sul prezzo dedicato"
+
+#: includes/classes/class-wcb2b-post_types.php:1656
+#: includes/classes/class-wcb2b-post_types.php:1980
+msgid "Enabled (lax)"
+msgstr "Abilitato (leggero)"
+
+#: includes/classes/class-wcb2b-post_types.php:1659
+#: includes/classes/class-wcb2b-post_types.php:1981
+msgid "Enabled (strict)"
+msgstr "Abilitato (severo)"
+
+#: includes/classes/class-wcb2b-post_types.php:1827
+#: includes/classes/class-wcb2b-post_types.php:1849
+#: includes/classes/class-wcb2b-post_types.php:1871
+#: includes/classes/class-wcb2b-post_types.php:1892
+#: includes/classes/class-wcb2b-post_types.php:1913
+#: includes/classes/class-wcb2b-post_types.php:1934
+#: includes/classes/class-wcb2b-post_types.php:1956
+#: includes/classes/class-wcb2b-post_types.php:1978
+#: includes/classes/class-wcb2b-post_types.php:2000
+#: includes/classes/class-wcb2b-post_types.php:2022
+#: includes/classes/class-wcb2b-post_types.php:2043
+#: includes/classes/class-wcb2b-post_types.php:2064
+#: includes/classes/class-wcb2b-post_types.php:2085
+#: includes/classes/class-wcb2b-post_types.php:2106
+#: includes/classes/class-wcb2b-post_types.php:2127
+#: includes/classes/class-wcb2b-post_types.php:2148
+#: includes/classes/class-wcb2b-post_types.php:2169
+#: includes/classes/class-wcb2b-post_types.php:2190
+#: includes/classes/class-wcb2b-post_types.php:2211
+#: includes/classes/class-wcb2b-post_types.php:2232
+#: includes/classes/class-wcb2b-post_types.php:2253
+#: includes/classes/class-wcb2b-post_types.php:2274
+#: includes/classes/class-wcb2b-post_types.php:2295
+#: includes/classes/class-wcb2b-post_types.php:2316
+#: includes/classes/class-wcb2b-post_types.php:2337
+#: includes/classes/class-wcb2b-post_types.php:2358
+#: includes/classes/class-wcb2b-post_types.php:2379
+#: includes/classes/class-wcb2b-post_types.php:2400
+#: includes/classes/class-wcb2b-post_types.php:2421
+msgid "-- No Change --"
+msgstr "— Nessuna modifica —"
+
+#: includes/classes/class-wcb2b-post_types.php:1872
+#: includes/classes/class-wcb2b-post_types.php:1893
+#: includes/classes/class-wcb2b-post_types.php:1914
+#: includes/classes/class-wcb2b-post_types.php:2023
+#: includes/classes/class-wcb2b-post_types.php:2044
+#: includes/classes/class-wcb2b-post_types.php:2065
+#: includes/classes/class-wcb2b-post_types.php:2086
+#: includes/classes/class-wcb2b-post_types.php:2107
+#: includes/classes/class-wcb2b-post_types.php:2128
+#: includes/classes/class-wcb2b-post_types.php:2149
+#: includes/classes/class-wcb2b-post_types.php:2170
+#: includes/classes/class-wcb2b-post_types.php:2191
+#: includes/classes/class-wcb2b-post_types.php:2212
+#: includes/classes/class-wcb2b-post_types.php:2233
+#: includes/classes/class-wcb2b-post_types.php:2254
+#: includes/classes/class-wcb2b-post_types.php:2275
+#: includes/classes/class-wcb2b-post_types.php:2296
+#: includes/classes/class-wcb2b-post_types.php:2317
+#: includes/classes/class-wcb2b-post_types.php:2338
+#: includes/classes/class-wcb2b-post_types.php:2359
+#: includes/classes/class-wcb2b-post_types.php:2380
+#: includes/classes/class-wcb2b-post_types.php:2401
+#: includes/classes/class-wcb2b-post_types.php:2422
+msgid "Yes"
+msgstr "Si"
+
+#: includes/classes/class-wcb2b-post_types.php:1873
+#: includes/classes/class-wcb2b-post_types.php:1894
+#: includes/classes/class-wcb2b-post_types.php:1915
+#: includes/classes/class-wcb2b-post_types.php:2024
+#: includes/classes/class-wcb2b-post_types.php:2045
+#: includes/classes/class-wcb2b-post_types.php:2066
+#: includes/classes/class-wcb2b-post_types.php:2087
+#: includes/classes/class-wcb2b-post_types.php:2108
+#: includes/classes/class-wcb2b-post_types.php:2129
+#: includes/classes/class-wcb2b-post_types.php:2150
+#: includes/classes/class-wcb2b-post_types.php:2171
+#: includes/classes/class-wcb2b-post_types.php:2192
+#: includes/classes/class-wcb2b-post_types.php:2213
+#: includes/classes/class-wcb2b-post_types.php:2234
+#: includes/classes/class-wcb2b-post_types.php:2255
+#: includes/classes/class-wcb2b-post_types.php:2276
+#: includes/classes/class-wcb2b-post_types.php:2297
+#: includes/classes/class-wcb2b-post_types.php:2318
+#: includes/classes/class-wcb2b-post_types.php:2339
+#: includes/classes/class-wcb2b-post_types.php:2360
+#: includes/classes/class-wcb2b-post_types.php:2381
+#: includes/classes/class-wcb2b-post_types.php:2402
+#: includes/classes/class-wcb2b-post_types.php:2423
+msgid "No"
+msgstr "No"
+
+#: includes/classes/class-wcb2b-post_types.php:2012
+msgid "Add business centificate"
+msgstr "Aggiungi certificato di attività"
+
+#: includes/classes/class-wcb2b.php:198
+#: includes/views/settings/html-admin-settings.php:23
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: includes/classes/class-wcb2b.php:211
+#: includes/views/settings/html-admin-settings.php:37
+msgid "Changelog"
+msgstr "Changelog"
+
+#: includes/classes/class-wcb2b.php:212
+#: includes/views/settings/html-admin-settings.php:38
+msgid "Docs"
+msgstr "Documentazione"
+
+#: includes/classes/class-wcb2b.php:213
+#: includes/views/settings/html-admin-settings.php:39
+msgid "Faq"
+msgstr "Faq"
+
+#: includes/classes/class-wcb2b.php:214
+#: includes/views/settings/html-admin-settings.php:40
+msgid "Guide & Snippets"
+msgstr "Guide & Snippets"
+
+#: includes/classes/class-wcb2b.php:215
+#: includes/views/settings/html-admin-settings.php:41
+msgid "Support"
+msgstr "Supporto"
+
+#: includes/classes/class-wcb2b.php:357
+msgid ""
+"%s requires %s plugin to be installed and active, please check. %s has been "
+"disabled."
+msgstr ""
+"%s richiede che il plugin %s sia installato ed attivo, per favore controlla. "
+"%s è stato disabilitato."
+
+#: includes/classes/emails/class-wcb2b-email-customer-onquote-order.php:26
+msgid "On quote order"
+msgstr "Preventivo in lavorazione"
+
+#: includes/classes/emails/class-wcb2b-email-customer-onquote-order.php:27
+msgid "Send email notification to customer when his quote request is received."
+msgstr ""
+"Invia una notifica email al cliente quando viene ricevuta la sua richiesta "
+"di preventivo."
+
+#: includes/classes/emails/class-wcb2b-email-customer-onquote-order.php:45
+msgid "Your quote request on {site_title} is received!"
+msgstr "La tua richiesta di preventivo su {site_title} è stata ricevuta!"
+
+#: includes/classes/emails/class-wcb2b-email-customer-onquote-order.php:54
+msgid "We are checking your request."
+msgstr "Stiamo verificando la tua richiesta."
+
+#: includes/classes/emails/class-wcb2b-email-customer-quoted-order.php:27
+msgid "Quoted order"
+msgstr "Preventivo elaborato"
+
+#: includes/classes/emails/class-wcb2b-email-customer-quoted-order.php:28
+msgid ""
+"Send email notification to customer when his quote request is processed."
+msgstr ""
+"Invia una notifica email al cliente quando la sua richiesta di preventivo "
+"viene elaborata."
+
+#: includes/classes/emails/class-wcb2b-email-customer-quoted-order.php:46
+msgid "Your quote request on {site_title} is processed!"
+msgstr "La tua richiesta di preventivo su {site_title} è stata elaborata!"
+
+#: includes/classes/emails/class-wcb2b-email-customer-quoted-order.php:55
+msgid "Please take a look to our best offer."
+msgstr "Dai un’occhiata alla nostra migliore offerta."
+
+#: includes/classes/emails/class-wcb2b-email-customer-status-notification.php:27
+msgid "Status notification"
+msgstr "Notifica stato"
+
+#: includes/classes/emails/class-wcb2b-email-customer-status-notification.php:28
+msgid "Send email notification to customer when his account is enabled."
+msgstr "Invia una notifica email al cliente quando il suo account è abilitato."
+
+#: includes/classes/emails/class-wcb2b-email-customer-status-notification.php:55
+msgid "Your account on {site_title} is approved!"
+msgstr "Il tuo account su {site_title} è stato approvato!"
+
+#: includes/classes/emails/class-wcb2b-email-customer-status-notification.php:64
+msgid "Your customer account is now able to purchase."
+msgstr "Il tuo account cliente è adesso abilitato all’acquisto."
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:23
+msgid "New quote"
+msgstr "Nuovo preventivo"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:24
+msgid "Send email notification to admin when a new quote request is received."
+msgstr ""
+"Invia una notifica email all’amministratore quando viene ricevuta una nuova "
+"richiesta di preventivo."
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:44
+msgid "A new quote request on {site_title} is received!"
+msgstr "È stata ricevuta una nuova richiesta di preventivo su {site_title}!"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:53
+msgid "New quotation request."
+msgstr "Nuova richiesta di preventivo."
+
+#. translators: %s: list of placeholders
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:131
+msgid "Available placeholders: %s"
+msgstr "Segnaposti disponibili: %s"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:134
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:82
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:82
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:82
+msgid "Enable/Disable"
+msgstr "Abilita/Disabilita"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:136
+msgid "Enable this email notification"
+msgstr "Abilita questa notifica email"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:140
+msgid "Recipient(s)"
+msgstr "Destinatario(i)"
+
+#. translators: %s: WP admin email
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:143
+msgid "Enter recipients (comma separated) for this email. Defaults to %s."
+msgstr ""
+"Inserisci i destinatari (separati da virgole) per questa email. Predefinito "
+"%s."
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:149
+msgid "Subject"
+msgstr "Oggetto"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:157
+msgid "Email heading"
+msgstr "Intestazione email"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:165
+msgid "Additional content"
+msgstr "Contenuto aggiuntivo"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:166
+msgid "Text to appear below the main email content."
+msgstr "Testo da visualizzare sotto in contenuto dell’email."
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:168
+#: templates/single-product/barcode.php:13
+msgid "N/A"
+msgstr "N/D"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:174
+msgid "Email type"
+msgstr "Tipo email"
+
+#: includes/classes/emails/class-wcb2b-email-new-quote.php:176
+msgid "Choose which format of email to send."
+msgstr "Scegli quale formato utilizzare per l’email."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:50
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:91
+msgid "Invoice payment"
+msgstr "Pagamento con fattura"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:51
+msgid ""
+"Allows invoice payments. Website admin will manually invoice the customer."
+msgstr ""
+"Consente il pagamento con fattura. L’amministratore del sito web fatturerà "
+"manualmente il cliente."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:84
+msgid "Enable invoice payments"
+msgstr "Abilita il pagamento con fattura"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:88
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:88
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:88
+msgid "Title"
+msgstr "Titolo"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:90
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:90
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:90
+msgid ""
+"This controls the title for the payment method the customer sees during "
+"checkout."
+msgstr "È il titolo del metodo di pagamento che il cliente vede nella cassa."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:95
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:95
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:95
+msgid "Description"
+msgstr "Descrizione"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:97
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:97
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:97
+msgid "Payment method description that the customer will see on your checkout."
+msgstr ""
+"Descrizione del metodo di pagamento che il cliente vedrà al momento del "
+"pagamento."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:98
+msgid ""
+"We will send you the payment invoice for your order as soon as possible."
+msgstr ""
+"Ti invieremo la fattura di pagamento del tuo ordine il prima possibile."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:102
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:102
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:102
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:104
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:104
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:104
+msgid "Instructions that will be added to the thank you page and emails."
+msgstr ""
+"Istruzioni che verranno aggiunte alla pagina di ringraziamento e nelle email."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:105
+msgid "-- You will receive invoice as soon as possibile --"
+msgstr "— Riceverai la fattura il prima possibile —"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:109
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:109
+msgid "Choose an order status"
+msgstr "Scegli uno stato ordine"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:112
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:112
+msgid "Choose order status you will be set after checkout"
+msgstr "Scegli lo stato dell’ordine che verrà impostato dopo il checkout"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:117
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:117
+msgid "Select order status"
+msgstr "Seleziona lo stato ordine"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:121
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:121
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:109
+msgid "Enable for shipping methods"
+msgstr "Abilita per i metodi di spedizione"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:124
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:124
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:112
+msgid ""
+"Select shipping methods that allow this payment method. Leave blank to "
+"enable for all methods."
+msgstr ""
+"Seleziona i metodi di spedizione che consentono questo metodo di pagamento. "
+"Lascia vuoto per abilitare tutti i metodi."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:129
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:129
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:117
+msgid "Select shipping methods"
+msgstr "Seleziona i metodi di spedizione"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:133
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:133
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:121
+msgid "Enable for min amount"
+msgstr "Abilita per importo minimo"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:135
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:135
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:123
+msgid "Set a minimum cart amount to make this payment method available."
+msgstr ""
+"Imposta un importo minimo di carrello per abilitare questo metodo di "
+"pagamento."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:140
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:140
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:128
+msgid "Enable for max amount"
+msgstr "Abilita per importo massimo"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-invoice.php:142
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:142
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:130
+msgid "Set a maximum cart amount to make this payment method available."
+msgstr ""
+"Imposta un importo massimo di carrello per abilitare questo metodo di "
+"pagamento."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:50
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:91
+msgid "Purchase order"
+msgstr "Ordine di acquisto"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:51
+msgid "Allows purchase order payments."
+msgstr "Consente il pagamento di ordini di acquisto."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:84
+msgid "Enable purchase order payments"
+msgstr "Abilita i pagamenti degli ordini di acquisto"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:98
+msgid "Please add your PO number"
+msgstr "Per favore aggiungi il numero dell’ordine di acquisto"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-purchaseorder.php:223
+msgid "Please enter a purchase order number."
+msgstr "Si prega di inserire un numero di ordine di acquisto."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:50
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:91
+msgid "Quotation request"
+msgstr "Richiesta di preventivo"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:51
+msgid "Allows customers to ask for quotations."
+msgstr "Consenti ai clienti di richiedere preventivi."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:84
+msgid "Enable quotation requests"
+msgstr "Abilita richieste di preventivo"
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:98
+msgid "We will make you our best offer."
+msgstr "Ti faremo la nostra migliore offerta."
+
+#: includes/classes/gateways/class-wcb2b-payment-gateway-quotation.php:105
+msgid ""
+"Thanks for your request, you will receive our best offer for the chosen "
+"products."
+msgstr ""
+"Grazie per la tua richiesta, riceverai la nostra migliore offerta per i "
+"prodotti scelti."
+
+#: includes/classes/settings/class-wcb2b-settings.php:25
+msgid "B2B"
+msgstr "B2B"
+
+#: includes/classes/settings/class-wcb2b-settings.php:51
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+#: includes/classes/settings/class-wcb2b-settings.php:53
+msgid "This section controls general options to manage your shop."
+msgstr ""
+"Questa sezione controlla le opzioni generali per gestire il tuo negozio."
+
+#: includes/classes/settings/class-wcb2b-settings.php:56
+msgid "Restricted catalog"
+msgstr "Catalogo limitato"
+
+#: includes/classes/settings/class-wcb2b-settings.php:58
+msgid "Restict catalog visibility to logged in customers"
+msgstr "Limita la visibilità del catalogo ai soli clienti registrati"
+
+#: includes/classes/settings/class-wcb2b-settings.php:59
+msgid "Redirect not logged in users to login page to have a restricted access"
+msgstr ""
+"Reindirizza gli utenti non registrati alla pagina di login per avere un "
+"accesso limitato"
+
+#: includes/classes/settings/class-wcb2b-settings.php:63
+msgid "Quick order page"
+msgstr "Pagina ordine rapido"
+
+#: includes/classes/settings/class-wcb2b-settings.php:67
+msgid "Page to use for quick orders. Remember to add the shortcode %1$s."
+msgstr ""
+"Pagina da utilizzare per ordini rapidi. Ricorda di aggiungere lo shortcode "
+"%1$s."
+
+#: includes/classes/settings/class-wcb2b-settings.php:81
+msgid "Products settings"
+msgstr "Impostazioni prodotti"
+
+#: includes/classes/settings/class-wcb2b-settings.php:83
+msgid ""
+"This section controls product and product categories options to manage "
+"prices and visibility."
+msgstr ""
+"Questa sezione controlla le opzioni di prodotti e categorie di prodotti per "
+"gestire i prezzi e la visibilità."
+
+#: includes/classes/settings/class-wcb2b-settings.php:88
+msgid "Delivery week days"
+msgstr "Giorni della settimana di consegna"
+
+#: includes/classes/settings/class-wcb2b-settings.php:92
+msgid ""
+"Indicate week days to be considered working for delivery time calculation."
+msgstr ""
+"Indica i giorni della settimana da considerare lavorativi per il calcolo dei "
+"tempi di consegna."
+
+#: includes/classes/settings/class-wcb2b-settings.php:95
+msgid "Monday"
+msgstr "Lunedì"
+
+#: includes/classes/settings/class-wcb2b-settings.php:96
+msgid "Tuesday"
+msgstr "Martedì"
+
+#: includes/classes/settings/class-wcb2b-settings.php:97
+msgid "Wednesday"
+msgstr "Mercoledì"
+
+#: includes/classes/settings/class-wcb2b-settings.php:98
+msgid "Thursday"
+msgstr "Giovedì"
+
+#: includes/classes/settings/class-wcb2b-settings.php:99
+msgid "Friday"
+msgstr "Venerdì"
+
+#: includes/classes/settings/class-wcb2b-settings.php:100
+msgid "Saturday"
+msgstr "Sabato"
+
+#: includes/classes/settings/class-wcb2b-settings.php:101
+msgid "Sunday"
+msgstr "Domenica"
+
+#: includes/classes/settings/class-wcb2b-settings.php:106
+msgid "Holidays"
+msgstr "Festività"
+
+#: includes/classes/settings/class-wcb2b-settings.php:108
+msgid ""
+"Comma separated dates to consider as holiday (format dd/mm). You can choose "
+"from calendar below to add a date"
+msgstr ""
+"Date da considerare come festività (formato gg/mm) separate da virgola. Puoi "
+"scegliere dal calendario qui sotto per aggiungere una data"
+
+#: includes/classes/settings/class-wcb2b-settings.php:114
+msgid "Tax exemption by country"
+msgstr "Esenzione tasse per paese"
+
+#: includes/classes/settings/class-wcb2b-settings.php:118
+msgid ""
+"Apply the tax exemption in the shopping cart for customers belonging to a "
+"group (not GUEST) with billing country among those chosen."
+msgstr ""
+"Applica l’esenzione tasse nel carrello per i clienti appartenenti ad un "
+"gruppo (non GUEST) con paese di fatturazione tra quelli scelti."
+
+#: includes/classes/settings/class-wcb2b-settings.php:125
+msgid "Redirect on page"
+msgstr "Reindirizza sulla pagina"
+
+#: includes/classes/settings/class-wcb2b-settings.php:130
+msgid ""
+"When users go directly to a not visible product category or a not visible "
+"product"
+msgstr ""
+"Quando gli utenti accedono direttamente ad una ad una categoria prodotto non "
+"autorizzata o ad un prodotto non autorizzato"
+
+#: includes/classes/settings/class-wcb2b-settings.php:136
+msgid "-- Do nothing --"
+msgstr "— Non fare nulla —"
+
+#: includes/classes/settings/class-wcb2b-settings.php:137
+msgid "404 (not found) page"
+msgstr "Pagina 404 (non trovato)"
+
+#: includes/classes/settings/class-wcb2b-settings.php:149
+msgid ""
+"This section controls cart and checkout pages by adding new fields and by "
+"setting minimum cart amount to allow to purchase."
+msgstr ""
+"Questa sezione controlla le pagine del carrello e di pagamento aggiungendo "
+"nuovi campi e impostando l’importo minimo del carrello per consentire "
+"l’acquisto."
+
+#: includes/classes/settings/class-wcb2b-settings.php:157
+msgid "Email address for invoices field in checkout"
+msgstr "Campo indirizzo email di fatturazione nel checkout"
+
+#: includes/classes/settings/class-wcb2b-settings.php:158
+msgid ""
+"Add an additional field to billing address, to allow customers to "
+"communicate email address where they prefer to receive invoices"
+msgstr ""
+"Aggiungi un campo aggiuntivo all’indirizzo di fatturazione, per consentire "
+"ai clienti di comunicare l’indirizzo email dove preferiscono ricevere le "
+"fatture"
+
+#: includes/classes/settings/class-wcb2b-settings.php:172
+msgid "VAT number field in checkout"
+msgstr "Campo Partita IVA nel checkout"
+
+#: includes/classes/settings/class-wcb2b-settings.php:173
+msgid ""
+"Add an additional field to billing address, to allow customers to "
+"communicate their VAT number"
+msgstr ""
+"Aggiungi un campo aggiuntivo all’indirizzo di fatturazione, per consentire "
+"ai clienti di comunicare la propria Partita IVA"
+
+#: includes/classes/settings/class-wcb2b-settings.php:187
+msgid "Enable VAT number VIES validation in checkout for EU customers"
+msgstr ""
+"Abilita la validazione VIES della partita IVA nel checkout per i clienti "
+"dell’UE"
+
+#: includes/classes/settings/class-wcb2b-settings.php:188
+msgid "VIES validation response can be viewed in backend user edit page"
+msgstr ""
+"La risposta della validazione VIES può essere visualizzata nella pagina di "
+"modifica dell’utente backend"
+
+#: includes/classes/settings/class-wcb2b-settings.php:188
+msgid ""
+"Attention! To enable VIES check you need PHP SOAP extension is available on "
+"your server. Please contact your hosting provider."
+msgstr ""
+"Attenzione! Per abilitare il controllo VIES è necessario che l’estensione "
+"PHP SOAP sia disponibile sul server. Si prega di contattare il proprio "
+"hosting provider."
+
+#: includes/classes/settings/class-wcb2b-settings.php:193
+msgid "Enabled (Strict - block purchase if error occurs)"
+msgstr "Abilitato (Severo: blocca l’acquisto se si verifica un errore)"
+
+#: includes/classes/settings/class-wcb2b-settings.php:194
+msgid "Enabled (Lax - don't block purchase if error occurs)"
+msgstr "Abilitato (Leggero: non blocca l’acquisto se si verifica un errore)"
+
+#: includes/classes/settings/class-wcb2b-settings.php:204
+msgid "Customers settings"
+msgstr "Impostazioni clienti"
+
+#: includes/classes/settings/class-wcb2b-settings.php:206
+msgid ""
+"This section controls customers options to manage registration forms and "
+"account activation."
+msgstr ""
+"Questa sezione controlla le opzioni dei clienti per gestire i moduli di "
+"registrazione e l’attivazione dell’account."
+
+#: includes/classes/settings/class-wcb2b-settings.php:211
+msgid "Registration notice"
+msgstr "Notifica di registrazione"
+
+#: includes/classes/settings/class-wcb2b-settings.php:214
+msgid "Send email to admin on every new customer account registration"
+msgstr ""
+"Invia una email all’amministratore ad ogni registrazione di un nuovo account "
+"cliente"
+
+#: includes/classes/settings/class-wcb2b-settings.php:215
+msgid ""
+"When a customer create an account, an email is send to admin to inform him"
+msgstr ""
+"Quando un cliente crea un nuovo account, una email viene inviata "
+"all’amministratore per informarlo"
+
+#: includes/classes/settings/class-wcb2b-settings.php:221
+msgid "Default group"
+msgstr "Gruppo predefinito"
+
+#: includes/classes/settings/class-wcb2b-settings.php:226
+msgid "Assign automatically customer to a group on registration"
+msgstr "Assegna automaticamente il cliente ad un gruppo quando si registra"
+
+#: includes/classes/settings/class-wcb2b-settings.php:233
+msgid "-- Allow to choose --"
+msgstr "— Consenti di scegliere —"
+
+#: includes/classes/settings/class-wcb2b-settings.php:239
+msgid "Roles to consider as customer"
+msgstr "Ruoli da considerare come cliente"
+
+#: includes/classes/settings/class-wcb2b-settings.php:243
+msgid ""
+"Extends functions reserved for users with \"customer\" role to other roles."
+msgstr ""
+"Estende le funzioni riservate agli utenti con ruolo “cliente” ad altri ruoli."
+
+#: includes/classes/settings/class-wcb2b-settings.php:253
+msgid "Automatic group change"
+msgstr "Cambio gruppo automatico"
+
+#: includes/classes/settings/class-wcb2b-settings.php:257
+msgid ""
+"Enable the automatic movement of users between groups based on their total "
+"purchase amounts."
+msgstr ""
+"Abilita lo spostamento automatico degli utenti tra i gruppi in base al "
+"totale di acquisto."
+
+#: includes/classes/settings/class-wcb2b-settings.php:266
+msgid "Endpoints settings"
+msgstr "Impostazioni endpoints"
+
+#: includes/classes/settings/class-wcb2b-settings.php:268
+msgid ""
+"Endpoints are appended to your page URLs to handle specific actions on the "
+"my-account pages. They should be unique."
+msgstr ""
+"Gli endpoint vengono aggiunti agli URL della tua pagina per gestire azioni "
+"specifiche sulle pagine del mio account. Dovrebbero essere unici."
+
+#: includes/classes/settings/class-wcb2b-settings.php:273
+msgid "Enable quotations"
+msgstr "Abilita preventivi"
+
+#: includes/classes/settings/class-wcb2b-settings.php:276
+msgid "Enable quotations endpoint in my-account page"
+msgstr "Abilita endpoint delle quotazioni nella pagina del mio account"
+
+#: includes/classes/settings/class-wcb2b-settings.php:281
+msgid "Quotation endpoint"
+msgstr "Endpoint per i preventivi"
+
+#: includes/classes/settings/class-wcb2b-settings.php:284
+msgid "Endpoint for the \"My account → Quotations\" page."
+msgstr "Endpoint per la pagina “Il mio account &rarr; Preventivi”."
+
+#: includes/classes/settings/class-wcb2b-settings.php:288
+msgid "Quotation validity"
+msgstr "Validità preventivo"
+
+#: includes/classes/settings/class-wcb2b-settings.php:291
+msgid "Quotation validity days (set 0 to give no limit)."
+msgstr "Giorni di validità preventivo (imposta 0 per non dare alcun limite)"
+
+#: includes/classes/settings/class-wcb2b-settings.php:297
+msgid "Enable saved carts"
+msgstr "Abilita carrelli salvati"
+
+#: includes/classes/settings/class-wcb2b-settings.php:300
+msgid "Enable saved carts endpoint in my-account page"
+msgstr "Abilita endpoint dei carrelli salvati nella pagina del mio account"
+
+#: includes/classes/settings/class-wcb2b-settings.php:305
+msgid "Saved carts endpoint"
+msgstr "Endpoint per i carrelli salvati"
+
+#: includes/classes/settings/class-wcb2b-settings.php:308
+msgid "Endpoint for the \"My account → Saved carts\" page."
+msgstr "Endpoint per la pagina “Il mio account &rarr; Carrelli salvati”."
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:135
+#: includes/legacy/api/class-wcb2b-api-groups.php:152
+#: includes/legacy/api/class-wcb2b-api-groups.php:173
+#: includes/legacy/api/class-wcb2b-api-groups.php:200
+msgid "Missing parameter %s"
+msgstr "Parametro mancante %s"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:140
+#: includes/legacy/api/class-wcb2b-api-groups.php:177
+#: includes/legacy/api/class-wcb2b-api-groups.php:204
+msgid "Invalid group"
+msgstr "Gruppo non valido"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:156
+msgid "A group named %s already exists"
+msgstr "Un gruppo chiamato %s già esiste"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:162
+msgid "This group cannot be created"
+msgstr "Questo gruppo non può essere creato"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:211
+msgid "This group cannot be deleted"
+msgstr "Questo gruppo non può essere eliminato"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:389
+#: includes/legacy/api/class-wcb2b-api-groups.php:396
+msgid "Sorry, you cannot list groups"
+msgstr "Non puoi creare una lista dei gruppi"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:403
+msgid "Sorry, you cannot add groups"
+msgstr "Non puoi creare un nuovo gruppo"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:410
+msgid "Sorry, you cannot edit groups"
+msgstr "Non puoi modifica un gruppo"
+
+#: includes/legacy/api/class-wcb2b-api-groups.php:417
+msgid "Sorry, you cannot delete groups"
+msgstr "Non puoi eliminare un gruppo"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce B2B"
+msgstr "WooCommerce B2B"
+
+#: includes/views/html-admin-coupons.php:21
+msgid "Groups restriction"
+msgstr "Restrizioni per gruppo"
+
+#: includes/views/html-admin-coupons.php:27
+msgid "Allowed group"
+msgstr "Gruppi consentiti"
+
+#: includes/views/html-admin-coupons.php:28
+msgid ""
+"Allow coupon usage to customers assigned to selected groups. No groups "
+"selected means no restrictions."
+msgstr ""
+"Consenti l’utilizzo del coupon ai clienti assegnati ai gruppi selezionati. "
+"Nessun gruppo selezionato significa nessuna restrizione."
+
+#: includes/views/html-admin-coupons.php:36
+msgid "Total spent restriction"
+msgstr "Restrizione spesa totale"
+
+#: includes/views/html-admin-coupons.php:44
+msgid ""
+"Allow coupon usage to customers who have spent at least the amount indicated."
+msgstr ""
+"Consenti l’utilizzo del coupon ai clienti che hanno speso almeno l’importo "
+"indicato."
+
+#: includes/views/html-admin-orders.php:24
+msgid "Stores invoice number, generated by external software (ie: ERP)."
+msgstr ""
+"Memorizza il numero di fattura, generato da un software esterno (es: ERP)."
+
+#: includes/views/html-admin-posts.php:16
+#: includes/views/html-admin-product_taxonomies.php:26
+msgid "Group access"
+msgstr "Accesso di gruppo"
+
+#: includes/views/html-admin-posts.php:21
+msgid ""
+"This is an always visible page. To unblock, please check documentation hooks."
+msgstr ""
+"Questa è una pagina sempre visibile. Per sbloccare, controlla gli hook della "
+"documentazione."
+
+#: includes/views/html-admin-posts.php:42
+msgid "Select the groups you want to be able to view this page"
+msgstr ""
+"Seleziona i gruppi che desideri siano abilitati a visualizzare questa pagina"
+
+#: includes/views/html-admin-product-data.php:23
+msgid "Inventory"
+msgstr "Inventario"
+
+#: includes/views/html-admin-product-data.php:32
+msgid "Product barcode number (EAN/IAN/GTIN)"
+msgstr "Codice a barre del prodotto (EAN/IAN/GTIN)"
+
+#: includes/views/html-admin-product-data.php:45
+msgid "Groups options"
+msgstr "Opzioni gruppi"
+
+#: includes/views/html-admin-product-data.php:51
+msgid "Edit %s group options"
+msgstr "Modifica opzione gruppo %s"
+
+#: includes/views/html-admin-product-data.php:66
+msgid "Product visibility for %s group"
+msgstr "Visibilità prodotto per gruppo %s"
+
+#: includes/views/html-admin-product-data.php:67
+msgid "Hide product"
+msgstr "Nascondi prodotto"
+
+#: includes/views/html-admin-product-data.php:84
+msgid "Group prices"
+msgstr "Prezzi gruppo"
+
+#: includes/views/html-admin-product-data.php:94
+msgid "Hide price for %s group"
+msgstr "Nascondi i prezzi per il gruppo %s"
+
+#: includes/views/html-admin-product-data.php:95
+msgid "Hide product price"
+msgstr "Nascondi prezzo prodotto"
+
+#: includes/views/html-admin-product-data.php:119
+msgid "Hide stock for %s group"
+msgstr "Nascondi la giacenza per il gruppo %s"
+
+#: includes/views/html-admin-product-data.php:120
+msgid "Hide product stock"
+msgstr "Nascondi giacenza prodotto"
+
+#: includes/views/html-admin-product-data.php:171
+msgid "Regular price for %s group"
+msgstr "Prezzo di listino per gruppo %s"
+
+#: includes/views/html-admin-product-data.php:183
+msgid "Sale price for %s group"
+msgstr "Prezzo scontato per gruppo %s"
+
+#: includes/views/html-admin-product-data.php:191
+#: includes/views/html-admin-product-data.php:229
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: includes/views/html-admin-product-data.php:191
+msgid "Add tier price"
+msgstr "Aggiungi prezzo per quantità"
+
+#: includes/views/html-admin-product-data.php:195
+msgid "Tier prices for %s group"
+msgstr "Prezzi per quantità per gruppo %s"
+
+#: includes/views/html-admin-product-data.php:200
+msgid "Min quantity"
+msgstr "Quantità minima"
+
+#: includes/views/html-admin-product-data.php:201
+msgid "Final discounted price"
+msgstr "Prezzo finale scontato"
+
+#: includes/views/html-admin-product-data.php:242
+msgid "Group min/max quantity and packages"
+msgstr "Quantità minima/massima e confezioni"
+
+#: includes/views/html-admin-product-data.php:250
+msgid "Packages"
+msgstr "Confezioni"
+
+#: includes/views/html-admin-product-data.php:251
+msgid ""
+"Force customers to purchase product by pack increment. Insert how much "
+"products are in every pack. Set to 0 to disable"
+msgstr ""
+"Obbliga i clienti ad acquistare il prodotto per incremento della confezione. "
+"Inserisci quanti prodotti ci sono in ogni confezione. Impostare su 0 per "
+"disabilitare"
+
+#: includes/views/html-admin-product-data.php:275
+msgid "Minimum quantity"
+msgstr "Quantità minima"
+
+#: includes/views/html-admin-product-data.php:276
+msgid ""
+"Force customers to purchase minimum quantity of this product. Set to 0 to "
+"disable"
+msgstr ""
+"Obbliga i clienti ad acquistare una quantità minima di questo prodotto. "
+"Impostare su 0 per disabilitare"
+
+#: includes/views/html-admin-product-data.php:300
+msgid "Maximum quantity"
+msgstr "Quantità massima"
+
+#: includes/views/html-admin-product-data.php:301
+msgid ""
+"Force customers to purchase maximum quantity of this product. Set to 0 to "
+"disable"
+msgstr ""
+"Obbliga i clienti ad acquistare una quantità massima di questo prodotto. "
+"Imposta a 0 per disabilitare."
+
+#: includes/views/html-admin-product_taxonomies.php:49
+msgid "Select the groups you want to be able to view this category"
+msgstr ""
+"Seleziona i gruppi che desideri siano abilitati a visualizzare questa "
+"categoria"
+
+#: includes/views/html-admin-user.php:25
+msgid "User group"
+msgstr "Gruppo utente"
+
+#: includes/views/html-admin-user.php:39
+msgid "Please select user group to apply discounts."
+msgstr "Seleziona un gruppo per applicare lo sconto."
+
+#: includes/views/html-admin-user.php:47
+msgid "User status"
+msgstr "Stato utente"
+
+#: includes/views/html-admin-user.php:58
+msgid "Please select user status to approve registration and enable purchases."
+msgstr ""
+"Seleziona lo stato utente per approvare la registrazione ed abilitare gli "
+"acquisti."
+
+#: includes/views/html-admin-user.php:63
+msgid "Limits"
+msgstr "Limiti"
+
+#: includes/views/html-admin-user.php:66
+msgid "Unpaid amount limit"
+msgstr "Limite di importo non pagato"
+
+#: includes/views/html-admin-user.php:70
+msgid ""
+"Prevents this customer from placing further orders if they have reached a "
+"unpaid total orders amount equal to or greater than the set limit. Set empty "
+"(or 0) to give no limit."
+msgstr ""
+"Impedisce a questo cliente di effettuare ulteriori ordini se ha raggiunto un "
+"importo totale degli ordini non pagato uguale o superiore al limite "
+"impostato. Imposta vuoto (o 0) per non dare alcun limite."
+
+#: includes/views/html-admin-user.php:75
+msgid "Statistics"
+msgstr "Statistiche"
+
+#: includes/views/html-admin-user.php:82
+msgid "Total orders"
+msgstr "Ordini totali"
+
+#: includes/views/html-admin-user.php:91
+msgid "Additional info"
+msgstr "Informazioni aggiuntive"
+
+#: includes/views/html-admin-user.php:104
+msgid "Not uploaded yet"
+msgstr "Non ancora caricato"
+
+#: includes/views/html-admin-user.php:111
+msgid "Valid VAT number"
+msgstr "Partita IVA valida"
+
+#: includes/views/html-admin-user.php:115
+msgid "Indicates whether customer's VAT number has been verified."
+msgstr "Indica se la partita IVA del cliente è stata verificata."
+
+#: includes/views/html-admin-user.php:119
+msgid "VIES response"
+msgstr "Risposta VIES"
+
+#: includes/views/notices/html-admin-notice-update.php:21
+msgid ""
+"WooCommerce B2B database update required. Before to update, please be sure "
+"to have a database recovery backup."
+msgstr ""
+"Aggiornamento necessario del database WooCommerce B2B. Prima di eseguire "
+"l’aggiornamento, assicurarsi di disporre di un backup di ripristino del "
+"database."
+
+#: includes/views/notices/html-admin-notice-update.php:25
+msgid "Update WooCommerce B2B Database"
+msgstr "Aggiorna database WooCommerce B2B"
+
+#: includes/views/notices/html-admin-notice-updated.php:15
+msgid ""
+"WooCommerce B2B database update complete. Thank you for updating to the "
+"latest version!"
+msgstr ""
+"Aggiornamento del database WooCommerce B2B completato. Grazie per "
+"l’aggiornamento all’ultima versione!"
+
+#: includes/views/notices/html-admin-notice-updating.php:15
+msgid "WooCommerce B2B database update in process."
+msgstr "Aggiornamento database WooCommerce B2B in corso."
+
+#: includes/views/settings/html-admin-settings-automatic_group_change.php:22
+msgid "Target group"
+msgstr "Gruppo target"
+
+#: includes/views/settings/html-admin-settings-automatic_group_change.php:28
+msgid "Insert row"
+msgstr "Inserisci riga"
+
+#: includes/views/settings/html-admin-settings-automatic_group_change.php:29
+msgid "Remove selected row(s)"
+msgstr "Rimuovi le righe selezionate"
+
+#: includes/views/settings/html-admin-settings-general.php:19
+msgid "Save changes"
+msgstr "Salva modifiche"
+
+#: includes/views/settings/html-admin-settings-status.php:14
+msgid "Templates override"
+msgstr "Sovrascrivi templates"
+
+#. Translators: %1$s: Template name, %2$s: Template version, %3$s: Core version.
+#: includes/views/settings/html-admin-settings-status.php:53
+msgid "%1$s version %2$s is out of date. The core version is %3$s"
+msgstr "La versione %2$s del file %2$s è obsoleta. La versione attuale è %3$s"
+
+#: includes/views/settings/html-admin-settings-status.php:64
+msgid "There are no template overrides"
+msgstr "Non sono presenti templates sovrascritti"
+
+#: includes/views/settings/html-admin-settings-status.php:69
+msgid "Learn how to update templates"
+msgstr "Scopri come aggiornare i templates"
+
+#: includes/views/settings/html-admin-settings-tools.php:14
+#: includes/views/settings/html-admin-settings.php:33
+msgid "Tools"
+msgstr "Strumenti"
+
+#: includes/views/settings/html-admin-settings-tools.php:20
+msgid "Debug mode [BETA]"
+msgstr "Modalità debug [BETA]"
+
+#: includes/views/settings/html-admin-settings-tools.php:23
+msgid "This feature is experimental, enable it at your own risk!"
+msgstr ""
+"Questa funzionalità è sperimentale, abilitala a tuo rischio e pericolo!"
+
+#: includes/views/settings/html-admin-settings-tools.php:26
+msgid ""
+"When debug mode is enabled, all plugins except WooCommerce and WooCommerce "
+"B2B will be disabled for your current IP address (%s). Please take a look to "
+"plugin documentation for more informations before to proceed."
+msgstr ""
+"Quando la modalità debug è abilitata, tutti i plugin tranne WooCommerce e "
+"WooCommerce B2B verranno disabilitati per il tuo indirizzo IP corrente (%s). "
+"Per favore dai un’occhiata alla documentazione del plugin per maggiori "
+"informazioni prima di procedere."
+
+#: includes/views/settings/html-admin-settings-tools.php:31
+msgid "Disable"
+msgstr "Disabilita"
+
+#: includes/views/settings/html-admin-settings-tools.php:31
+msgid "Enable"
+msgstr "Abilita"
+
+#: includes/wcb2b-pluggable-functions.php:30
+msgid "Please, login to see prices and buy"
+msgstr "Accedi per visualizzare i prezzi ed acquistare"
+
+#: includes/wcb2b-pluggable-functions.php:90
+msgid "Valid"
+msgstr "Valido"
+
+#: includes/wcb2b-pluggable-functions.php:91
+msgid "VAT number is not verified by VIES"
+msgstr "La partita IVA non è valida"
+
+#: includes/wcb2b-pluggable-functions.php:92
+msgid "The provided country is invalid or the VAT number is empty"
+msgstr "Il paese fornito non è valido o il numero di partita IVA è vuoto"
+
+#: includes/wcb2b-pluggable-functions.php:93
+msgid "Your request cannot be processed due to high traffic, please try again"
+msgstr ""
+"La tua richiesta non può essere elaborata a causa del traffico elevato, "
+"riprova"
+
+#: includes/wcb2b-pluggable-functions.php:94
+msgid ""
+"Your request cannot be processed due to high traffic from your country, "
+"please try again"
+msgstr ""
+"La tua richiesta non può essere elaborata a causa dell’elevato traffico dal "
+"tuo paese, riprova"
+
+#: includes/wcb2b-pluggable-functions.php:95
+msgid "Server is currently unreachable, please try again"
+msgstr "Il server è attualmente irraggiungibile, riprova"
+
+#: includes/wcb2b-pluggable-functions.php:96
+msgid "Server is currently unreachable from your country, please try again"
+msgstr "Il server è attualmente irraggiungibile dal tuo paese, riprova"
+
+#: includes/wcb2b-pluggable-functions.php:97
+msgid "Server did not respond within time limit, please try again"
+msgstr "Il server non ha risposto entro il limite di tempo, riprova"
+
+#: includes/wcb2b-pluggable-functions.php:98
+msgid "An unknown error has occurred, please try again"
+msgstr "Si è verificato un errore sconosciuto, riprova"
+
+#: includes/wcb2b-pluggable-functions.php:456
+msgid "You must purchase at least %s of this product"
+msgstr "Devi acquistare almeno %s di questo prodotto"
+
+#: includes/wcb2b-pluggable-functions.php:459
+msgid "You can purchase at most %s of this product"
+msgstr "Puoi acquistare al massimo %s di questo prodotto"
+
+#: includes/wcb2b-pluggable-functions.php:462
+msgid "You must purchase at least %s and at most %s of this product"
+msgstr "Devi acquistare almeno %s e al massimo %s di questo prodotto"
+
+#: includes/wcb2b-pluggable-functions.php:465
+msgid "This product can be purchased by increments of %s"
+msgstr "Questo prodotto può essere acquistato in incrementi di %s"
+
+#: includes/wcb2b-pluggable-functions.php:602
+msgid "To be quoted"
+msgstr "Da preventivare"
+
+#: includes/wcb2b-pluggable-functions.php:609
+msgid "Add to quotation"
+msgstr "Aggiungi al preventivo"
+
+#: src/mu-debugger.php:24
+msgid ""
+"%s debug mode is active. All plugins except WooCommerce and %s will be "
+"temporarily disabled only for your current IP ADDRESS <%s>."
+msgstr ""
+"La modalità debug di %s è attiva. Tutti i plugin tranne WooCommerce e %s "
+"verranno temporaneamente disabilitati solo per il tuo attuale INDIRIZZO IP "
+"<%s>."
+
+#: templates/cart/coupons.php:14
+msgid "Available Coupons"
+msgstr "Coupons disponibili"
+
+#: templates/cart/coupons.php:20
+msgid "Click to apply this coupon"
+msgstr "Clicca per applicare questo coupon"
+
+#: templates/emails/customer-onquote-order.php:14
+#: templates/emails/customer-quoted-order.php:14
+#: templates/emails/customer-status-notification.php:16
+#: templates/emails/plain/customer-onquote-order.php:14
+#: templates/emails/plain/customer-quoted-order.php:14
+#: templates/emails/plain/customer-status-notification.php:16
+msgid "Hi %s,"
+msgstr "Ciao %s,"
+
+#: templates/emails/customer-onquote-order.php:16
+#: templates/emails/plain/customer-onquote-order.php:15
+msgid ""
+"We have received your quotation request, we will provide you with our best "
+"offer for the requested products as soon as possible, by sending you an "
+"email notification. In the meantime, here’s a reminder of your request:"
+msgstr ""
+"Abbiamo ricevuto la tua richiesta di preventivo, ti forniremo la nostra "
+"migliore offerta per i prodotti richiesti nel più breve tempo possibile, "
+"inviandoti una email di notifica. Nel frattempo, ecco un promemoria della "
+"tua richiesta:"
+
+#: templates/emails/customer-onquote-order.php:27
+#: templates/emails/plain/customer-onquote-order.php:30
+msgid ""
+"At any time, you can check the status of your quotation requests in your "
+"private area"
+msgstr ""
+"In ogni momento puoi controllare lo stato delle tue richieste di preventivo "
+"nella tua area riservata"
+
+#: templates/emails/customer-quoted-order.php:16
+#: templates/emails/plain/customer-quoted-order.php:15
+msgid ""
+"We proceeded to formulate our best offer for the requested products. Here’s "
+"a summary:"
+msgstr ""
+"Abbiamo elaborato la nostra migliore offerta per i prodotti richiesti. Ecco "
+"un riepilogo:"
+
+#: templates/emails/customer-quoted-order.php:27
+#: templates/emails/plain/customer-quoted-order.php:30
+msgid "You can check details of this quotation requests in your private area"
+msgstr ""
+"Puoi controllare i dettagli di queste richieste di preventivo nella tua area "
+"riservata"
+
+#: templates/emails/customer-status-notification.php:17
+#: templates/emails/plain/customer-status-notification.php:18
+msgid "Your account is approved and you are now able to purchase."
+msgstr "Il tuo account è stato approvato ed è ora abilitato all’acquisto."
+
+#: templates/emails/customer-status-notification.php:18
+#: templates/emails/plain/customer-status-notification.php:19
+msgid "You can now start purchasing and access your account area at: %s"
+msgstr ""
+"Ora puoi iniziare ad acquistare e accedere all’area del tuo account su: %s"
+
+#: templates/emails/new-quote.php:14
+msgid "You’ve received a new quotation request from: %s"
+msgstr "Hai ricevuto una nuova richiesta di preventivo da: %s"
+
+#: templates/emails/new-quote.php:26
+msgid "View quotation request"
+msgstr "Visualizza richieste di preventivo"
+
+#: templates/emails/plain/new-quote.php:14
+msgid "You’ve received the following quotation request from: %s"
+msgstr "Hai ricevuto la seguente richiesta di preventivo da: %s"
+
+#: templates/global/group-simulator.php:16
+msgid "Original customer group:"
+msgstr "Gruppo cliente originale:"
+
+#: templates/global/group-simulator.php:25
+msgid "Current customer group:"
+msgstr "Gruppo cliente attuale:"
+
+#: templates/global/group-simulator.php:51
+msgid "Change group"
+msgstr "Modifica gruppo"
+
+#: templates/global/live-search-form-product.php:19
+msgid "Sku: %s"
+msgstr "Sku: %s"
+
+#: templates/global/live-search-form-product.php:23
+msgid "Add to cart"
+msgstr "Aggiungi al carrello"
+
+#: templates/global/live-search-form.php:14
+msgid "Search for product"
+msgstr "Cerca prodotto"
+
+#: templates/myaccount/business-certificate-field.php:36
+msgid "View current"
+msgstr "Vedi attuale"
+
+#: templates/myaccount/business-certificate-field.php:44
+msgid "Delete current"
+msgstr "Elimina attuale"
+
+#: templates/myaccount/saved-carts.php:19
+#: templates/myaccount/saved-carts.php:45
+msgid "ID"
+msgstr "ID"
+
+#: templates/myaccount/saved-carts.php:22
+#: templates/myaccount/saved-carts.php:46
+msgid "Date"
+msgstr "Data"
+
+#: templates/myaccount/saved-carts.php:25
+#: templates/myaccount/saved-carts.php:47
+msgid "Items"
+msgstr "Articoli"
+
+#: templates/myaccount/saved-carts.php:28
+#: templates/myaccount/saved-carts.php:48
+msgid "Actions"
+msgstr "Azioni"
+
+#: templates/myaccount/saved-carts.php:50
+msgid "Restore"
+msgstr "Ripristina"
+
+#: templates/myaccount/saved-carts.php:51
+msgid "Delete"
+msgstr "Elimina"
+
+#: templates/myaccount/saved-carts.php:68
+msgid "No saved carts available yet."
+msgstr "Nessun carrello disponibile"
+
+#: templates/order/quick-order-form.php:21
+msgid "Process now"
+msgstr "Procedi"
+
+#: templates/order/quick-order-form.php:24
+msgid "Proceed to checkout"
+msgstr "Concludi il pagamento"
+
+#: templates/single-product/already-bought.php:14
+msgid "You have already purchased this product before!"
+msgstr "Hai già acquistato questo prodotto in precedenza!"
+
+#: templates/single-product/barcode.php:13
+msgid "Barcode: %s"
+msgstr "Codice a barre: %s"
+
+#: templates/single-product/rrp-price.php:13
+msgid "Recommended retail price: %s"
+msgstr "Prezzo di vendita consigliato: %s"
+
+#: templates/single-product/sales.php:14
+msgid "Sales: %s"
+msgstr "Vendite: %s"
+
+#: templates/single-product/tabs/purchase-history.php:15
+msgid "It looks like you have never purchased this item before"
+msgstr "Sembra che tu non abbia mai acquistato questo articolo prima"
+
+#: templates/single-product/tabs/purchase-history.php:22
+msgid "Order"
+msgstr "Ordine"
+
+#: templates/single-product/tabs/purchase-history.php:23
+msgid "Purchase date"
+msgstr "Data di acquisto"
+
+#: templates/single-product/tabs/purchase-history.php:24
+msgid "Quantity"
+msgstr "Quantità"
+
+#: templates/single-product/tabs/shippings.php:15
+msgid "Zone name"
+msgstr "Zona"
+
+#: templates/single-product/tabs/shippings.php:16
+msgid "Shipping method"
+msgstr "Metodo di spedizione"
+
+#: templates/single-product/tabs/shippings.php:17
+msgid "Cost"
+msgstr "Costo"
+
+#: templates/single-product/tier-price.php:17
+msgid "Buy %s for %s each and save %s"
+msgstr "Acquista %s a %s e risparmia %s"
+
+#. Plugin URI of the plugin/theme
+msgid "https://woocommerce-b2b.com/"
+msgstr "https://woocommerce-b2b.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Transform your WooCommerce into Business-to-Business shop for wholesale."
+msgstr "Trasforma il tuo WooCommerce in un negozio B2B all’ingrosso."
+
+#. Author of the plugin/theme
+msgid "Code4Life"
+msgstr "Code4Life"
+
+#. Author URI of the plugin/theme
+msgid "https://code4life.it/"
+msgstr "https://code4life.it/"
+
+#: includes/classes/class-wcb2b-hooks.php:642
+msgctxt "placeholder"
+msgid "Email address for invoices"
+msgstr "Indirizzo email per le fatture"
+
+#: includes/classes/class-wcb2b-hooks.php:658
+msgctxt "placeholder"
+msgid "Vat number"
+msgstr "Partita IVA"
+
+#: includes/classes/class-wcb2b-post_types.php:50
+msgctxt "Admin menu name"
+msgid "Groups"
+msgstr "Gruppi"
+
+#~ msgid "Hide product price for this specific group"
+#~ msgstr "Nascondi il prezzo del prodotto per questo gruppo specifico"
+
+#~ msgid "Regular price"
+#~ msgstr "Prezzo di listino"
+
+#~ msgid "Sale price"
+#~ msgstr "Prezzo scontato"
+
+#~ msgid "Tier prices"
+#~ msgstr "Prezzi per quantità"
+
+#~ msgid ""
+#~ "Email address for invoices field is added to checkout form, order emails, "
+#~ "order details and registration forms (if \"REGISTRATION FORMS\" option "
+#~ "enabled)"
+#~ msgstr ""
+#~ "Il campo dell’indirizzo email per le fatture viene aggiunto al modulo di "
+#~ "pagamento, alle email dell’ordine, ai dettagli dell’ordine e ai moduli di "
+#~ "registrazione (se l’opzione “MODULI DI REGISTRAZIONE” è abilitata)"
+
+#~ msgid "Make email address for invoices field required"
+#~ msgstr "Rende obbligatorio il campo dell’indirizzo email per le fatture"
+
+#~ msgid ""
+#~ "If disabled, email address for invoices field will be considered as "
+#~ "optional"
+#~ msgstr ""
+#~ "Se disabilitato, il campo dell’indirizzo email per le fatture sarà "
+#~ "considerato facoltativo"
+
+#~ msgid "Add VAT number field to billing address"
+#~ msgstr "Aggiunge il campo partita IVA all’indirizzo di fatturazione"
+
+#~ msgid ""
+#~ "VAT number field is added to checkout form, order emails, order details "
+#~ "and registration forms (if \"REGISTRATION FORMS\" option enabled)"
+#~ msgstr ""
+#~ "Il campo Partita IVA viene aggiunto al form nella pagina della cassa, "
+#~ "nelle email di ordine, nei dettagli dell’ordine (se l’opzione “Moduli di "
+#~ "registrazione” è abilitata)"
+
+#~ msgid "VAT number required"
+#~ msgstr "Partita IVA obbligatoria"
+
+#~ msgid "If disabled, VAT number field will be considered as optional"
+#~ msgstr "Se disabilitata, la Partita IVA verrà considerata opzionale"
+
+#~ msgid "Registration forms"
+#~ msgstr "Moduli registrazione"
+
+#~ msgid "Add billing data to registration form"
+#~ msgstr "Aggiunge i campi di fatturazione al form di registrazione"
+
+#~ msgid "Show discount %s in myaccount"
+#~ msgstr "Mostra sconto %s nel mio account"
+
+#~ msgid "Fee type"
+#~ msgstr "Tipo tariffa"
+
+#~ msgid "To disable for this group, set to 0"
+#~ msgstr "Per disabilitare l’opzione per questo gruppo, imposta 0"
+
+#~ msgid "Disable payment methods for this group"
+#~ msgstr "Disabilita modalità di pagamento per questo gruppo"
+
+#~ msgid "Disable shipping methods for this group"
+#~ msgstr "Disabilita modalità di spedizione per questo gruppo"
+
+#~ msgid "Terms and conditions for this group"
+#~ msgstr "Termini e condizioni per questo gruppo"
+
+#~ msgid "Discount"
+#~ msgstr "Sconto"
+
+#~ msgid ""
+#~ "If customer has already purchased a product in the past, an \"Already "
+#~ "bought\" message is displayed on product detail page after \"Add to "
+#~ "cart\" button."
+#~ msgstr ""
+#~ "Se il cliente ha già acquistato un prodotto in passato, viene "
+#~ "visualizzato un messaggio “Già acquistato” nella pagina dei dettagli del "
+#~ "prodotto dopo il pulsante “Aggiungi al carrello”."
+
+#~ msgid "Show the total number of product sales on the product detail page."
+#~ msgstr ""
+#~ "Mostra il numero totale di vendite del prodotto nella pagina dei dettagli "
+#~ "del prodotto."
+
+#~ msgid ""
+#~ "Shows additional tab with shippings summary table on product detail page"
+#~ msgstr ""
+#~ "Mostra la scheda aggiuntiva con la tabella di riepilogo delle spedizioni "
+#~ "nella pagina dei dettagli del prodotto"
+
+#~ msgid "Display prices tax"
+#~ msgstr "Visualizza lei tasse sui prezzi"
+
+#~ msgid "Enable prices tax display management by group"
+#~ msgstr ""
+#~ "Abilita la gestione della visualizzazione delle tasse sui prezzi per "
+#~ "gruppo"
+
+#~ msgid ""
+#~ "You can set the display of prices including or excluding taxes in each "
+#~ "group page."
+#~ msgstr ""
+#~ "È possibile impostare la visualizzazione dei prezzi comprensivi o esclusi "
+#~ "di tasse in ogni pagina del gruppo."
+
+#~ msgid ""
+#~ "When enabled and set, override global options \"Display prices in the "
+#~ "shop\" and \"Display prices during cart and checkout\" behaviour in "
+#~ "\"Tax\" tab under WooCommerce settings"
+#~ msgstr ""
+#~ "Quando abilitato e impostato, ignora il comportamento delle opzioni "
+#~ "globali “Mostra i prezzi nel negozio” e “Mostra i prezzi durante il "
+#~ "carrello e il checkout” nella scheda “Tasse” nelle impostazioni di "
+#~ "WooCommerce"
+
+#~ msgid "Display pages management by group"
+#~ msgstr "Visualizza la gestione delle pagine per gruppo"
+
+#~ msgid ""
+#~ "When enabled, every page can be set to be visible only to certain groups"
+#~ msgstr ""
+#~ "Quando abilitata, ogni pagina può essere impostata per essere visibile "
+#~ "solamente a determinati gruppi"
+
+#~ msgid "Display product categories management by group"
+#~ msgstr "Visualizza la gestione delle categorie di prodotti per gruppo"
+
+#~ msgid ""
+#~ "When enabled, every product category can be set to be visible only to "
+#~ "certain groups"
+#~ msgstr ""
+#~ "Quando abilitata, ogni categoria prodotto può essere impostata per essere "
+#~ "visibile solamente a determinati gruppi"
+
+#~ msgid "Enable minimum purchase amount management by group"
+#~ msgstr "Abilita la gestione dell’importo minimo di acquisto per gruppo"
+
+#~ msgid ""
+#~ "You can set a dedicated minimum amount to purchase in each group page."
+#~ msgstr ""
+#~ "Puoi impostare un importo minimo per l’acquisto dedicato in ogni pagina "
+#~ "del gruppo."
+
+#~ msgid "Display message in cart"
+#~ msgstr "Visualizza avviso nella pagina carrello"
+
+#~ msgid "Prevent proceed to checkout"
+#~ msgstr "Evita di procedere alla cassa"
+
+#~ msgid "Enable moderate registration management by group"
+#~ msgstr "Abilita la gestione moderata della registrazione per gruppo"
+
+#~ msgid "You can set admin approval to login in each group page."
+#~ msgstr ""
+#~ "Puoi impostare l’approvazione dell’amministratore per accedere in ogni "
+#~ "pagina del gruppo."
+
+#~ msgid "Product prices with and without taxes"
+#~ msgstr "Prezzi dei prodotti con e senza tasse"
+
+#~ msgid "Show prices with or without taxes according to customer type"
+#~ msgstr "Mostra i prezzi con o senza tasse in base al tipo di cliente"
+
+#~ msgid ""
+#~ "Guest customers will view prices included taxes, customers belonging "
+#~ "WooCommerce B2B groups will view prices excluded taxes"
+#~ msgstr ""
+#~ "I clienti ospiti visualizzeranno i prezzi IVA inclusa, i clienti "
+#~ "appartenenti ai gruppi di WooCommerce B2B visualizzeranno i prezzi IVA "
+#~ "esclusa"
+
+#~ msgid ""
+#~ "Add new columns to users list and new field to profile page in backend to "
+#~ "manage customer status"
+#~ msgstr ""
+#~ "Aggiunge una nuova colonna nell’elenco utenti e un nuovo campo alla "
+#~ "pagina del profilo utente nel backend per modificarne lo stato"
+
+#~ msgid ""
+#~ "This options will be available only to B2B customers (assigned to a "
+#~ "group) as set with \"%s\" hook, take a look to documentation for more "
+#~ "info."
+#~ msgstr ""
+#~ "Questa opzione sarà disponibile solo per i clienti B2B (assegnati a un "
+#~ "gruppo) come impostato con l’hook “%s”, dai un’occhiata alla "
+#~ "documentazione per maggiori informazioni."
+
+#~ msgid "Allow customers to make quotation requests"
+#~ msgstr "Consente ai clienti di effettuare richieste di preventivo"
+
+#~ msgid "There is a new version of %s available"
+#~ msgstr "È disponibile una nuova versione di %s"
+
+#~ msgid ""
+#~ "View version %s details, documentation and changelog before to update"
+#~ msgstr ""
+#~ "Visualizza i dettagli, la documentazione e il changelog della versione %s "
+#~ "prima di eseguire l’aggiornamento"
+
+#~ msgid "View version %s details"
+#~ msgstr "Visualizza i dettagli della versione %s"

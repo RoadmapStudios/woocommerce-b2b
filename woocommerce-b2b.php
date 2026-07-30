@@ -2,10 +2,10 @@
 
 /*
     Plugin Name: WooCommerce B2B
-    Plugin URI: https://woocommerce-b2b.com/
+    Plugin URI: https://commercebird.com/
     Description: Transform your WooCommerce into Business-to-Business shop for wholesale.
-    Author: Code4Life
-    Author URI: https://code4life.it/
+    Author: CommerceBird
+    Author URI: https://commercebird.com
     Version: 4.0.9
     Text Domain: woocommerce-b2b
     Domain Path: /i18n/

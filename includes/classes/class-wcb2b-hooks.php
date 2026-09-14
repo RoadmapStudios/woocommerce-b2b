@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B Common hooks set-up
  *
- * @version 4.0.6
+ * @version 4.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -27,8 +27,8 @@ class WCB2B_Hooks {
     public function init_hooks() {
         add_filter( 'option_wcb2b_has_role_customer', array( $this, 'has_role_customer' ), 99, 2 );
         add_filter( 'is_protected_meta', array( $this, 'hide_protected_meta' ), 10, 3 );
-        add_action( 'init', array( $this, 'tax_exemption' ) );
-        add_action( 'init', array( $this, 'tax_exemption_by_country' ), 11 );
+        add_action( 'wp', array( $this, 'tax_exemption' ) );
+        add_action( 'woocommerce_before_calculate_totals', array( $this, 'tax_exemption_by_country' ), 11 );
         add_action( 'woocommerce_new_order', array( $this, 'add_customer_group' ), 10, 2 );
         add_action( 'init', array( $this, 'add_quotations_endpoint' ) );
         add_action( 'init', array( $this, 'add_saved_cart_endpoint' ) );
@@ -79,6 +79,7 @@ class WCB2B_Hooks {
         add_action( 'woocommerce_order_status_changed', array( $this, 'automatic_group_change' ), 10, 3 );
         add_filter( 'woocommerce_available_payment_gateways', array( $this, 'disable_payment_methods' ) );
         add_filter( 'woocommerce_package_rates', array( $this, 'disable_shipping_methods' ) );
+        add_action( 'woocommerce_init', array( $this, 'hide_prices_hooks' ) );
     }
 
     /**
@@ -500,7 +501,7 @@ class WCB2B_Hooks {
         // Customize new account email
         if ( is_object( $email ) && $email->id == 'wcb2b_customer_quoted_order' ) {
             $order = wc_get_order( $email->object->get_id() );
-            if ( $order->has_status( 'quoted' ) ) {
+            if ( $order && $order->has_status( 'quoted' ) ) {
                 if ( $valid_until = $order->get_meta( '_wcb2b_quotation_validity', true ) ) {
                     printf( '<p><strong>%s:</strong> %s</p>',
                         esc_html__( 'Quotation valid until', 'woocommerce-b2b' ),
@@ -519,14 +520,8 @@ class WCB2B_Hooks {
      * @return string
      */
     public function tax_exemption() {
-        if ( $customer_group_id = wcb2b_get_customer_group() ) {
-            if ( isset( WC()->customer ) ) {
-                if ( get_post_meta( $customer_group_id, 'wcb2b_group_tax_exemption', true ) ) {
-                    WC()->customer->set_is_vat_exempt( true );
-                } else {
-                    WC()->customer->set_is_vat_exempt( false );
-                }
-            }
+        if ( isset( WC()->customer ) ) {
+            WC()->customer->set_is_vat_exempt( false );
         }
     }
 
@@ -537,12 +532,12 @@ class WCB2B_Hooks {
      */
     public function tax_exemption_by_country() {
         // Check customer group
-        if ( $customer_group_id = wcb2b_get_customer_group() ) {
-            if ( isset( WC()->customer ) ) {
+        if ( isset( WC()->customer ) ) {
+            WC()->customer->set_is_vat_exempt( false );
+            if ( $customer_group_id = wcb2b_get_customer_group() ) {
                 if ( get_post_meta( $customer_group_id, 'wcb2b_group_tax_exemption', true ) ) {
                     WC()->customer->set_is_vat_exempt( true );
                 } else {
-                    WC()->customer->set_is_vat_exempt( false );
                     // Skip if customer group is guest
                     if ( $customer_group_id !== get_option( 'wcb2b_guest_group' ) ) {
                         // Get tax free countries
@@ -1019,6 +1014,39 @@ class WCB2B_Hooks {
             }
         }
         return $shipping_rates;
+    }
+
+    /**
+     * Hide prices for quotations
+     */
+    public function hide_prices_hooks() {
+        // Check if group exists or is deleted precedently
+        if ( $customer_group_id = wcb2b_get_customer_group() ) {
+            if ( get_post_meta( $customer_group_id, 'wcb2b_group_hide_prices', true ) ) {
+                // Verify if quotations are allowed
+                if ( get_post_meta( $customer_group_id, 'wcb2b_group_quotations_with_hidden_prices', true ) ) {
+                    // Replace prices with message
+                    add_filter( 'woocommerce_get_formatted_order_total', function( $formatted_total, $order, $tax_display, $display_refunded ) {
+                        if ( $order->has_status( 'on-quote' ) ) {
+                            return wcb2b_quotation_prices_placeholder();
+                        }
+                        return $formatted_total;
+                    }, 10, 4 );
+                    add_filter( 'woocommerce_order_formatted_line_subtotal', function( $subtotal, $item, $order ) {
+                        if ( $order->has_status( 'on-quote' ) ) {
+                            return wcb2b_quotation_prices_placeholder();
+                        }
+                        return $subtotal;
+                    }, 10, 3 );
+                    add_filter( 'woocommerce_get_order_item_totals', function( $total_rows, $order, $tax_display ) {
+                        if ( $order->has_status( 'on-quote' ) ) {
+                            return array();
+                        }
+                        return $total_rows;
+                    }, 10, 3 );
+                }
+            }
+        }
     }
 
 }

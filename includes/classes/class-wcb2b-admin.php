@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B Admin set-up Class
  *
- * @version 4.0.2
+ * @version 4.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -55,7 +55,7 @@ class WCB2B_Admin {
         $groups = wcb2b_get_groups();
 
         wp_enqueue_script( 'jquery-ui-datepicker' );
-        wp_register_script( 'wcb2b_admin', plugins_url( 'assets/js/admin.min.js', WCB2B_PLUGIN_FILE ), array( 'jquery-ui-datepicker' ), '4.0.2', true );
+        wp_register_script( 'wcb2b_admin', plugins_url( 'assets/js/admin.min.js', WCB2B_PLUGIN_FILE ), array( 'jquery-ui-datepicker' ), '4.1.0', true );
         wp_enqueue_script( 'wcb2b_admin' );
         wp_localize_script( 'wcb2b_admin', 'parameters', array(
             'wcb2b_groups' => json_encode( wp_list_pluck( $groups->posts, 'post_title', 'ID' ) ),

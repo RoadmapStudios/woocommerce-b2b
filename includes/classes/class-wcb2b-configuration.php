@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B Configuration Class
  *
- * @version 3.3.9
+ * @version 4.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -78,8 +78,12 @@ if ( ! class_exists( 'WCB2B_Configuration', false ) ) :
          * @static
          */
         public static function set_unallowed_terms_and_products() {
-            self::$unallowed_terms = wcb2b_set_unallowed_terms();
-            self::$unallowed_products = wcb2b_set_unallowed_products();
+            if ( function_exists( 'wcb2b_set_unallowed_terms' ) ) {
+                self::$unallowed_terms = wcb2b_set_unallowed_terms();
+            }
+            if ( function_exists( 'wcb2b_set_unallowed_products' ) ) {
+                self::$unallowed_products = wcb2b_set_unallowed_products();
+            }
         }
 
         /**

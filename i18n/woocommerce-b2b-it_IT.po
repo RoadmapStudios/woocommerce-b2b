@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce B2B 4.0.8\n"
 "Report-Msgid-Bugs-To: https://support.woocommerce-b2b.com/\n"
-"POT-Creation-Date: 2025-11-19 18:24:04+00:00\n"
-"PO-Revision-Date: 2025-11-19 06:35+0100\n"
+"POT-Creation-Date: 2026-09-12 05:37:05+00:00\n"
+"PO-Revision-Date: 2026-09-12 07:46+0200\n"
 "Last-Translator: Code4Life <supporto@code4life.it>\n"
 "Language-Team: EN <support@woocommerce-b2b.com>\n"
 "Language: it_IT\n"
@@ -13,8 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
 "X-Generator: Poedit 2.2\n"
@@ -37,7 +38,7 @@ msgstr "Numero ordine di acquisto"
 
 #: includes/classes/class-wcb2b-admin-orders.php:145
 #: includes/classes/class-wcb2b-frontend-myaccount.php:232
-#: includes/classes/class-wcb2b-hooks.php:506
+#: includes/classes/class-wcb2b-hooks.php:507
 msgid "Quotation valid until"
 msgstr "Preventivo valido fino a"
 
@@ -84,9 +85,9 @@ msgstr "Modifica stato in “preventivo elaborato”"
 
 #: includes/classes/class-wcb2b-admin-orders.php:414
 #: includes/classes/class-wcb2b-admin-users.php:376
-#: includes/classes/class-wcb2b-hooks.php:641
-#: includes/classes/class-wcb2b-hooks.php:737
-#: includes/classes/class-wcb2b-hooks.php:743
+#: includes/classes/class-wcb2b-hooks.php:636
+#: includes/classes/class-wcb2b-hooks.php:732
+#: includes/classes/class-wcb2b-hooks.php:738
 #: includes/classes/class-wcb2b-post_types.php:766
 #: includes/classes/settings/class-wcb2b-settings.php:154
 msgid "Email address for invoices"
@@ -118,80 +119,80 @@ msgid "Always visible page"
 msgstr "Pagine sempre visibili"
 
 #: includes/classes/class-wcb2b-admin-products.php:157
-#: includes/classes/class-wcb2b-admin-products.php:320
-#: includes/classes/class-wcb2b-admin-products.php:536
+#: includes/classes/class-wcb2b-admin-products.php:328
+#: includes/classes/class-wcb2b-admin-products.php:544
 msgid "Product visibility (%s)"
 msgstr "Visibilità prodotto (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:158
-#: includes/classes/class-wcb2b-admin-products.php:330
-#: includes/classes/class-wcb2b-admin-products.php:539
+#: includes/classes/class-wcb2b-admin-products.php:338
+#: includes/classes/class-wcb2b-admin-products.php:547
 msgid "Regular price (%s)"
 msgstr "Prezzo di listino (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:159
-#: includes/classes/class-wcb2b-admin-products.php:331
-#: includes/classes/class-wcb2b-admin-products.php:540
+#: includes/classes/class-wcb2b-admin-products.php:339
+#: includes/classes/class-wcb2b-admin-products.php:548
 msgid "Sale price (%s)"
 msgstr "Prezzo scontato (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:160
-#: includes/classes/class-wcb2b-admin-products.php:332
-#: includes/classes/class-wcb2b-admin-products.php:541
+#: includes/classes/class-wcb2b-admin-products.php:340
+#: includes/classes/class-wcb2b-admin-products.php:549
 msgid "Tier prices (%s)"
 msgstr "Prezzi per quantità (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:161
-#: includes/classes/class-wcb2b-admin-products.php:328
-#: includes/classes/class-wcb2b-admin-products.php:537
+#: includes/classes/class-wcb2b-admin-products.php:336
+#: includes/classes/class-wcb2b-admin-products.php:545
 msgid "Hide prices (%s)"
 msgstr "Nascondi prezzi (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:162
-#: includes/classes/class-wcb2b-admin-products.php:329
-#: includes/classes/class-wcb2b-admin-products.php:538
+#: includes/classes/class-wcb2b-admin-products.php:337
+#: includes/classes/class-wcb2b-admin-products.php:546
 msgid "Hide stocks (%s)"
 msgstr "Nascondi giacenza (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:164
-#: includes/classes/class-wcb2b-admin-products.php:340
-#: includes/classes/class-wcb2b-admin-products.php:542
+#: includes/classes/class-wcb2b-admin-products.php:348
+#: includes/classes/class-wcb2b-admin-products.php:550
 msgid "Packages (%s)"
 msgstr "Confezioni (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:165
-#: includes/classes/class-wcb2b-admin-products.php:341
-#: includes/classes/class-wcb2b-admin-products.php:543
+#: includes/classes/class-wcb2b-admin-products.php:349
+#: includes/classes/class-wcb2b-admin-products.php:551
 msgid "Minimum quantity (%s)"
 msgstr "Quantità minima (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:166
-#: includes/classes/class-wcb2b-admin-products.php:342
-#: includes/classes/class-wcb2b-admin-products.php:544
+#: includes/classes/class-wcb2b-admin-products.php:350
+#: includes/classes/class-wcb2b-admin-products.php:552
 msgid "Maximum quantity (%s)"
 msgstr "Quantità massima (%s)"
 
 #: includes/classes/class-wcb2b-admin-products.php:170
-#: includes/classes/class-wcb2b-admin-products.php:352
-#: includes/classes/class-wcb2b-admin-products.php:557
+#: includes/classes/class-wcb2b-admin-products.php:360
+#: includes/classes/class-wcb2b-admin-products.php:565
 #: includes/classes/class-wcb2b-post_types.php:641
 #: includes/views/html-admin-product-data.php:31
 msgid "Barcode"
 msgstr "Codice a barre"
 
-#: includes/classes/class-wcb2b-admin-products.php:318
+#: includes/classes/class-wcb2b-admin-products.php:326
 msgid "WCB2B - Product visibility for %s group"
 msgstr "WCB2B - Visibilità prodotto per gruppo %s"
 
-#: includes/classes/class-wcb2b-admin-products.php:326
+#: includes/classes/class-wcb2b-admin-products.php:334
 msgid "WCB2B - Product prices for %s group"
 msgstr "WCB2B - Prezzi prodotto per gruppo %s"
 
-#: includes/classes/class-wcb2b-admin-products.php:338
+#: includes/classes/class-wcb2b-admin-products.php:346
 msgid "WCB2B - Package and min-max quantity for %s group"
 msgstr "WCB2B - Confezioni e quantità minima/massima per gruppo %s"
 
-#: includes/classes/class-wcb2b-admin-products.php:350
+#: includes/classes/class-wcb2b-admin-products.php:358
 msgid "WCB2B - Barcode"
 msgstr "WCB2B - Codice a barre"
 
@@ -569,44 +570,44 @@ msgstr "Classe spedizione: %s"
 msgid "Added to cart"
 msgstr "Aggiunto al carrello"
 
-#: includes/classes/class-wcb2b-hooks.php:195
-#: includes/classes/class-wcb2b-hooks.php:228
+#: includes/classes/class-wcb2b-hooks.php:196
+#: includes/classes/class-wcb2b-hooks.php:229
 msgid "Awaiting invoice payment"
 msgstr "In attesa di pagamento fattura"
 
-#: includes/classes/class-wcb2b-hooks.php:200
+#: includes/classes/class-wcb2b-hooks.php:201
 msgid "Awaiting invoice payment <span class=\"count\">(%s)</span>"
 msgid_plural "Awaiting invoice payment <span class=\"count\">(%s)</span>"
 msgstr[0] "In attesa di pagamento fattura <span class=“count”>(%s)</span>"
 msgstr[1] "In attesa di pagamento fattura <span class=“count”>(%s)</span>"
 
-#: includes/classes/class-wcb2b-hooks.php:203
-#: includes/classes/class-wcb2b-hooks.php:229
+#: includes/classes/class-wcb2b-hooks.php:204
+#: includes/classes/class-wcb2b-hooks.php:230
 msgid "On quote"
 msgstr "Preventivo in elaborazione"
 
-#: includes/classes/class-wcb2b-hooks.php:208
+#: includes/classes/class-wcb2b-hooks.php:209
 msgid "On quote <span class=\"count\">(%s)</span>"
 msgid_plural "On quote <span class=\"count\">(%s)</span>"
 msgstr[0] "Preventivo in elaborazione <span class=“count”>(%s)</span>"
 msgstr[1] "Preventivi in elaborazione <span class=“count”>(%s)</span>"
 
-#: includes/classes/class-wcb2b-hooks.php:211
-#: includes/classes/class-wcb2b-hooks.php:230
+#: includes/classes/class-wcb2b-hooks.php:212
+#: includes/classes/class-wcb2b-hooks.php:231
 msgid "Quoted"
 msgstr "Preventivo elaborato"
 
-#: includes/classes/class-wcb2b-hooks.php:216
+#: includes/classes/class-wcb2b-hooks.php:217
 msgid "Quoted <span class=\"count\">(%s)</span>"
 msgid_plural "Quoted <span class=\"count\">(%s)</span>"
 msgstr[0] "Preventivo elaborato <span class=“count”>(%s)</span>"
 msgstr[1] "Preventivi elaborati <span class=“count”>(%s)</span>"
 
-#: includes/classes/class-wcb2b-hooks.php:309
+#: includes/classes/class-wcb2b-hooks.php:310
 msgid "Purchase Order number"
 msgstr "Numero ordine di acquisto"
 
-#: includes/classes/class-wcb2b-hooks.php:489
+#: includes/classes/class-wcb2b-hooks.php:490
 msgid ""
 "We are checking your account, please wait for the activation confirmation "
 "email before trying to login"
@@ -614,27 +615,27 @@ msgstr ""
 "Stiamo controllando il tuo account, attendi l’email di conferma attivazione "
 "prima di provare ad accedere"
 
-#: includes/classes/class-wcb2b-hooks.php:657
-#: includes/classes/class-wcb2b-hooks.php:721
-#: includes/classes/class-wcb2b-hooks.php:727
+#: includes/classes/class-wcb2b-hooks.php:652
+#: includes/classes/class-wcb2b-hooks.php:716
+#: includes/classes/class-wcb2b-hooks.php:722
 msgid "Vat number"
 msgstr "Partita IVA"
 
-#: includes/classes/class-wcb2b-hooks.php:722
+#: includes/classes/class-wcb2b-hooks.php:717
 msgid "Vat number (optional)"
 msgstr "Partita IVA (opzionale)"
 
-#: includes/classes/class-wcb2b-hooks.php:738
+#: includes/classes/class-wcb2b-hooks.php:733
 msgid "Email address for invoices (optional)"
 msgstr "Indirizzo email per fatture (opzionale)"
 
-#: includes/classes/class-wcb2b-hooks.php:804
-#: includes/classes/class-wcb2b-hooks.php:821
+#: includes/classes/class-wcb2b-hooks.php:799
+#: includes/classes/class-wcb2b-hooks.php:816
 msgid "Delivery days (min)"
 msgstr "Giorni per consegna (min)"
 
-#: includes/classes/class-wcb2b-hooks.php:805
-#: includes/classes/class-wcb2b-hooks.php:827
+#: includes/classes/class-wcb2b-hooks.php:800
+#: includes/classes/class-wcb2b-hooks.php:822
 msgid "Delivery days (max)"
 msgstr "Giorni per consegna (max)"
 
@@ -2729,8 +2730,8 @@ msgid ""
 "temporarily disabled only for your current IP ADDRESS <%s>."
 msgstr ""
 "La modalità debug di %s è attiva. Tutti i plugin tranne WooCommerce e %s "
-"verranno temporaneamente disabilitati solo per il tuo attuale INDIRIZZO IP "
-"<%s>."
+"verranno temporaneamente disabilitati solo per il tuo attuale INDIRIZZO IP <"
+"%s>."
 
 #: templates/cart/coupons.php:14
 msgid "Available Coupons"
@@ -2946,12 +2947,12 @@ msgstr "Code4Life"
 msgid "https://code4life.it/"
 msgstr "https://code4life.it/"
 
-#: includes/classes/class-wcb2b-hooks.php:642
+#: includes/classes/class-wcb2b-hooks.php:637
 msgctxt "placeholder"
 msgid "Email address for invoices"
 msgstr "Indirizzo email per le fatture"
 
-#: includes/classes/class-wcb2b-hooks.php:658
+#: includes/classes/class-wcb2b-hooks.php:653
 msgctxt "placeholder"
 msgid "Vat number"
 msgstr "Partita IVA"
@@ -3038,8 +3039,8 @@ msgstr "Gruppi"
 
 #~ msgid ""
 #~ "If customer has already purchased a product in the past, an \"Already "
-#~ "bought\" message is displayed on product detail page after \"Add to "
-#~ "cart\" button."
+#~ "bought\" message is displayed on product detail page after \"Add to cart"
+#~ "\" button."
 #~ msgstr ""
 #~ "Se il cliente ha già acquistato un prodotto in passato, viene "
 #~ "visualizzato un messaggio “Già acquistato” nella pagina dei dettagli del "
@@ -3072,9 +3073,9 @@ msgstr "Gruppi"
 #~ "di tasse in ogni pagina del gruppo."
 
 #~ msgid ""
-#~ "When enabled and set, override global options \"Display prices in the "
-#~ "shop\" and \"Display prices during cart and checkout\" behaviour in "
-#~ "\"Tax\" tab under WooCommerce settings"
+#~ "When enabled and set, override global options \"Display prices in the shop"
+#~ "\" and \"Display prices during cart and checkout\" behaviour in \"Tax\" "
+#~ "tab under WooCommerce settings"
 #~ msgstr ""
 #~ "Quando abilitato e impostato, ignora il comportamento delle opzioni "
 #~ "globali “Mostra i prezzi nel negozio” e “Mostra i prezzi durante il "

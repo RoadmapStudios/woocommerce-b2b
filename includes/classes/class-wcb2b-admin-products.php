@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B Products
  *
- * @version 4.0.9
+ * @version 4.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -291,6 +291,14 @@ class WCB2B_Admin_Products {
                 }, 10, 3 );
             }
         }
+
+        // Force default product prices
+        add_filter( 'woocommerce_product_export_product_column_regular_price', function( $value, $product, $column_id ) {
+            return get_post_meta( $product->get_id(), '_regular_price', true );
+        }, 10, 3 );
+        add_filter( 'woocommerce_product_export_product_column_sale_price', function( $value, $product, $column_id ) {
+            return get_post_meta( $product->get_id(), '_sale_price', true );
+        }, 10, 3 );
 
         // Barcode
         add_filter( 'woocommerce_product_export_product_column_wcb2b_barcode', function( $value, $product, $column_id ) {

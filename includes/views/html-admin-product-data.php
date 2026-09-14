@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B Admin Product data tab
  *
- * @version 3.3.2
+ * @version 4.1.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -225,7 +225,7 @@ defined( 'ABSPATH' ) || exit;
                                                             $price
                                                         ),
                                                         sprintf( '<td><a class="%s" href="">%s</a></td>',
-                                                            'button-link-delete',
+                                                            'wcb2b-button-link-delete',
                                                             esc_html__( 'Remove', 'woocommerce-b2b' )
                                                         )
                                                     );

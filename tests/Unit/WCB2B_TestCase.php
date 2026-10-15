@@ -28,6 +28,7 @@ abstract class WCB2B_TestCase extends \PHPUnit\Framework\TestCase {
         } );
         Functions\when( 'register_activation_hook' )->justReturn( null );
         Functions\when( 'register_deactivation_hook' )->justReturn( null );
+        Functions\when( 'add_shortcode' )->justReturn( null );
         Functions\when( 'is_admin' )->justReturn( true );
         Functions\when( 'get_site_option' )->justReturn( array() );
         Functions\when( 'get_option' )->alias( function ( $key, $default = false ) {
@@ -36,6 +37,8 @@ abstract class WCB2B_TestCase extends \PHPUnit\Framework\TestCase {
     }
 
     protected function tearDown(): void {
+        // Count Brain Monkey expectations as assertions, so expectation-only tests are not flagged risky
+        $this->addToAssertionCount( \Mockery::getContainer()->mockery_getExpectationCount() );
         Monkey\tearDown();
         parent::tearDown();
     }

@@ -30,13 +30,6 @@ final class WooCommerceB2B {
     public $version = '4.1.0';
 
     /**
-     * WooCommerce B2B Envato ID
-     *
-     * @var string
-     */
-    public $envato_id = '21565847';
-
-    /**
      * Useful external links
      *
      * @var array
@@ -77,7 +70,10 @@ final class WooCommerceB2B {
     public function __construct() {
         if ( ! array_key_exists( 'woocommerce/woocommerce.php', get_site_option( 'active_sitewide_plugins', array() ) ) && ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
             add_action( 'admin_notices', array( $this, 'dependencies_notice' ) );
-            add_action( 'admin_init', array( $this, 'dependencies_disable' ) );
+            // Never deactivate a host plugin, it owns its own lifecycle
+            if ( ! $this->is_package() ) {
+                add_action( 'admin_init', array( $this, 'dependencies_disable' ) );
+            }
             return false;
         }
         $this->define_constants();
@@ -89,9 +85,8 @@ final class WooCommerceB2B {
      * Define WooCommerce B2B Constants
      */
     private function define_constants() {
-        $this->define( 'WCB2B_ABSPATH', dirname( WCB2B_PLUGIN_FILE ) . '/' );
+        $this->define( 'WCB2B_ABSPATH', WCB2B_PACKAGE_DIR );
         $this->define( 'WCB2B_VERSION', $this->version );
-        $this->define( 'WCB2B_ENVATO_ID', $this->envato_id );
         $this->define( 'WCB2B_OVERRIDES', 'woocommerce-b2b' );
     }
 
@@ -103,8 +98,6 @@ final class WooCommerceB2B {
         include_once WCB2B_ABSPATH . 'includes/wcb2b-functions.php';
         /* Debug */
         include_once WCB2B_ABSPATH . 'includes/classes/class-wcb2b-debug.php';
-        /* Upgrades */
-        include_once WCB2B_ABSPATH . 'includes/classes/class-wcb2b-upgrade.php';
         /* Common */
         include_once WCB2B_ABSPATH . 'includes/classes/class-wcb2b-configuration.php';
         include_once WCB2B_ABSPATH . 'includes/classes/class-wcb2b-install.php';
@@ -131,12 +124,15 @@ final class WooCommerceB2B {
      * Hook into actions and filters
      */
     private function init_hooks() {
-        register_activation_hook( WCB2B_PLUGIN_FILE, array( $this, 'activation' ) );
-        register_deactivation_hook( WCB2B_PLUGIN_FILE, array( $this, 'deactivation' ) );
+        // Plugin lifecycle and plugins screen links belong to the host in package mode
+        if ( ! $this->is_package() ) {
+            register_activation_hook( WCB2B_PLUGIN_FILE, array( $this, 'activation' ) );
+            register_deactivation_hook( WCB2B_PLUGIN_FILE, array( $this, 'deactivation' ) );
+            add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
+            add_filter( 'plugin_action_links_' . plugin_basename( WCB2B_PLUGIN_FILE ), array( $this, 'settings_link' ) );
+        }
 
         add_filter( 'woocommerce_get_settings_pages', array( $this, 'settings' ) );
-        add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
-        add_filter( 'plugin_action_links_' . plugin_basename( WCB2B_PLUGIN_FILE ), array( $this, 'settings_link' ) );
         add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ), -1 );
         add_action( 'after_setup_theme', array( $this, 'pluggable' ) );
         add_action( 'init', array( $this, 'init' ), 0 );
@@ -290,6 +286,13 @@ final class WooCommerceB2B {
      * Load Localisation files
      */
     public function load_plugin_textdomain() {
+        if ( $this->is_package() ) {
+            // load_plugin_textdomain() resolves paths relative to WP_PLUGIN_DIR, which vendor/ may be outside of
+            $locale = apply_filters( 'plugin_locale', determine_locale(), 'woocommerce-b2b' );
+            load_textdomain( 'woocommerce-b2b', WP_LANG_DIR . '/plugins/woocommerce-b2b-' . $locale . '.mo' );
+            load_textdomain( 'woocommerce-b2b', WCB2B_ABSPATH . 'i18n/woocommerce-b2b-' . $locale . '.mo' );
+            return;
+        }
         load_plugin_textdomain( 'woocommerce-b2b', false, plugin_basename( dirname( WCB2B_PLUGIN_FILE ) ) . '/i18n/' );
     }
 
@@ -350,16 +353,31 @@ final class WooCommerceB2B {
     }
 
     /**
+     * Whether WooCommerce B2B runs bundled inside a host plugin
+     *
+     * @return bool
+     */
+    public function is_package() {
+        return defined( 'WCB2B_MODE' ) && WCB2B_Package::MODE_PACKAGE === WCB2B_MODE;
+    }
+
+    /**
      * Add admin notice if WooCommerce is disabled
      */
     public function dependencies_notice() {
-        printf( '<div class="error"><p>%s</p></div>',
-            sprintf( esc_html__( '%s requires %s plugin to be installed and active, please check. %s has been disabled.', 'woocommerce-b2b' ),
+        if ( $this->is_package() ) {
+            $message = sprintf( esc_html__( '%s requires %s plugin to be installed and active. B2B features are disabled until it is.', 'woocommerce-b2b' ),
+                '<strong>' . $this->plugin_name . '</strong>',
+                '<strong>WooCommerce</strong>'
+            );
+        } else {
+            $message = sprintf( esc_html__( '%s requires %s plugin to be installed and active, please check. %s has been disabled.', 'woocommerce-b2b' ),
                 '<strong>' . $this->plugin_name . '</strong>',
                 '<strong>WooCommerce</strong>',
                 '<strong>' . $this->plugin_name . '</strong>'
-            )
-        );
+            );
+        }
+        printf( '<div class="error"><p>%s</p></div>', $message );
     }
 
     /**

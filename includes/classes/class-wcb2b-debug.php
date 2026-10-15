@@ -50,6 +50,7 @@ class WCB2B_Debug {
                                 throw new Exception( __( 'Cannot delete MU-Plugin directory', 'woocommerce-b2b' ) );
                             }
                         }
+                        delete_option( 'wcb2b_debug_plugin' );
                         // Delete debug mode allowed IP
                         if ( ! delete_option( 'wcb2b_debug' ) ) {
                             throw new Exception( __( 'Cannot delete IP address option', 'woocommerce-b2b' ) );
@@ -67,6 +68,8 @@ class WCB2B_Debug {
                                 throw new Exception( __( 'Cannot create MU-Plugin file', 'woocommerce-b2b' ) );
                             }
                         }
+                        // Store the plugin that runs WooCommerce B2B (standalone or host), debug mode keeps it active
+                        update_option( 'wcb2b_debug_plugin', plugin_basename( WCB2B_PLUGIN_FILE ) );
                         // Store current IP address
                         if ( ! update_option( 'wcb2b_debug', $_SERVER['REMOTE_ADDR'] ) ) {
                             throw new Exception( __( 'Cannot store IP address option', 'woocommerce-b2b' ) );

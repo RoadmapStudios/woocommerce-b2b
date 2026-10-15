@@ -6,7 +6,7 @@
     Description:    Disable all other plugins than WooCommerce B2B for debug purposes.
     Author:         Code4Life
     Author URI:     https://code4life.it/
-    Version:        3.3.3
+    Version:        4.2.0
     Text Domain:    woocommerce-b2b
     License:        GPLv3
     License URI:    http://www.gnu.org/licenses/gpl-3.0.html
@@ -40,7 +40,7 @@ add_filter( 'option_active_plugins', function( $value, $option ) {
     if ( $_SERVER['REMOTE_ADDR'] == get_option( 'wcb2b_debug', false ) ) {
         return apply_filters( 'wcb2b_debug_muplugins', array(
             'woocommerce/woocommerce.php',
-            'woocommerce-b2b/woocommerce-b2b.php'
+            get_option( 'wcb2b_debug_plugin', 'woocommerce-b2b/woocommerce-b2b.php' )
         ) );
     }
     return $value;

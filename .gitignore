@@ -49,3 +49,5 @@ wp-config.php
 # Composer
 /vendor/
 /composer.lock
+/tests/fixtures/wcb2b-host/vendor/
+/tests/fixtures/wcb2b-host/composer.lock

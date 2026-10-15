@@ -6,7 +6,7 @@
     Description: Transform your WooCommerce into Business-to-Business shop for wholesale.
     Author: CommerceBird
     Author URI: https://commercebird.com
-    Version: 4.1.0
+    Version: 4.2.0
     Text Domain: woocommerce-b2b
     Domain Path: /i18n/
     License: GPLv3

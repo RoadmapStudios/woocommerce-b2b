@@ -1,0 +1,11 @@
+{
+    "name": "commercebird/wcb2b-host-fixture",
+    "description": "Test-only host plugin that bundles WooCommerce B2B",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "commercebird/woocommerce-b2b": "*@dev"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

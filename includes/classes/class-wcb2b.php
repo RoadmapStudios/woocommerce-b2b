@@ -3,7 +3,7 @@
 /**
  * WooCommerce B2B setup
  * 
- * @version 4.1.0
+ * @version 4.2.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -27,7 +27,7 @@ final class WooCommerceB2B {
      *
      * @var string
      */
-    public $version = '4.1.0';
+    public $version = '4.2.0';
 
     /**
      * Useful external links

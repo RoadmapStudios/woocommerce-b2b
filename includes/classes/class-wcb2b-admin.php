@@ -44,7 +44,7 @@ class WCB2B_Admin {
      * Print styles
      */
     public function print_styles() {
-        wp_register_style( 'wcb2b_admin', plugins_url( 'assets/css/admin.min.css', WCB2B_PLUGIN_FILE ), false, '4.0.1' );
+        wp_register_style( 'wcb2b_admin', WCB2B_PLUGIN_URI . 'assets/css/admin.min.css', false, '4.0.1' );
         wp_enqueue_style( 'wcb2b_admin' );
     }
 
@@ -55,7 +55,7 @@ class WCB2B_Admin {
         $groups = wcb2b_get_groups();
 
         wp_enqueue_script( 'jquery-ui-datepicker' );
-        wp_register_script( 'wcb2b_admin', plugins_url( 'assets/js/admin.min.js', WCB2B_PLUGIN_FILE ), array( 'jquery-ui-datepicker' ), '4.1.0', true );
+        wp_register_script( 'wcb2b_admin', WCB2B_PLUGIN_URI . 'assets/js/admin.min.js', array( 'jquery-ui-datepicker' ), '4.1.0', true );
         wp_enqueue_script( 'wcb2b_admin' );
         wp_localize_script( 'wcb2b_admin', 'parameters', array(
             'wcb2b_groups' => json_encode( wp_list_pluck( $groups->posts, 'post_title', 'ID' ) ),

@@ -39,7 +39,7 @@ final class WCB2B_Quotation_Gateway_Blocks extends AbstractPaymentMethodType
     public function get_payment_method_script_handles() {
         wp_register_script(
             'wcb2b_quotation_gateway-blocks-integration',
-            WCB2B_PLUGIN_URI . '/assets/client/blocks/wcb2b-payment-method-quotation.js',
+            WCB2B_PLUGIN_URI . 'assets/client/blocks/wcb2b-payment-method-quotation.js',
             array(
                 'wc-blocks-registry',
                 'wc-settings',

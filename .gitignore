@@ -51,3 +51,4 @@ wp-config.php
 /composer.lock
 /tests/fixtures/wcb2b-host/vendor/
 /tests/fixtures/wcb2b-host/composer.lock
+/.phpunit.result.cache

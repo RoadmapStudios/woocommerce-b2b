@@ -1,7 +1,7 @@
 {
     "name": "commercebird/woocommerce-b2b",
     "description": "Transform your WooCommerce into Business-to-Business shop for wholesale. Runs as a standalone plugin or bundled inside another plugin.",
-    "type": "library",
+    "type": "wordpress-plugin",
     "license": "GPL-3.0-or-later",
     "homepage": "https://commercebird.com/",
     "require": {

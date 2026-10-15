@@ -258,9 +258,17 @@ final class WooCommerceB2B {
      * Declare compatibility with HPOS and blocks
      */
     public function wc_compatibility() {
+        // In package mode this declares for the host plugin file, hosts that are not compatible can opt out
+        if ( ! apply_filters( 'wcb2b_declare_wc_compatibility', true ) ) {
+            return;
+        }
         if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
-            \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', WCB2B_PLUGIN_FILE, true );
-            \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', WCB2B_PLUGIN_FILE, true );
+            try {
+                \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', WCB2B_PLUGIN_FILE, true );
+                \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', WCB2B_PLUGIN_FILE, true );
+            } catch ( \Exception $e ) {
+                // The host plugin already declared itself incompatible: its declaration stands
+            }
         }
     }
 

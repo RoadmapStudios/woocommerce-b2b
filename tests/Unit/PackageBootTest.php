@@ -75,7 +75,38 @@ class PackageBootTest extends WCB2B_TestCase {
         WCB2B_Package::already_loaded_notice();
     }
 
+    public function test_standalone_runs_its_own_copy_when_loader_came_from_vendor() {
+        // A host autoloaded WCB2B_Package from vendor/ first: the standalone must still use its own folder
+        $file = self::package_dir() . 'includes/../woocommerce-b2b.php';
+        Functions\expect( 'plugin_dir_url' )->once()->with( $file )->andReturn( 'https://example.test/plugins/woocommerce-b2b/' );
+
+        $this->assertTrue( WCB2B_Package::boot_standalone( $file ) );
+
+        $this->assertSame( self::package_dir() . 'includes/../', WCB2B_PACKAGE_DIR );
+        $this->assertSame( 'https://example.test/plugins/woocommerce-b2b/', WCB2B_PLUGIN_URI );
+    }
+
+    public function test_activation_sandbox_boots_after_plugins_loaded() {
+        // activate_plugin() includes the plugin file after plugins_loaded, inside plugin_sandbox_scrape()
+        define( 'WP_SANDBOX_SCRAPING', true );
+        do_action( 'plugins_loaded' );
+        $this->stub_plugins_url();
+        Functions\expect( '_doing_it_wrong' )->never();
+
+        $this->assertTrue( WCB2B_Package::boot_standalone( self::package_dir() . 'woocommerce-b2b.php' ) );
+    }
+
+    public function test_boot_proceeds_when_active_standalone_folder_is_missing() {
+        // Folder removed by FTP or deploy, still listed in active_plugins until the plugins screen is opened
+        $this->define_plugins_dir( false );
+        $this->set_active_plugins( array( WCB2B_Package::STANDALONE_PLUGIN ) );
+        $this->stub_plugins_url();
+
+        $this->assertTrue( WCB2B_Package::boot( self::HOST ) );
+    }
+
     public function test_boot_is_refused_when_standalone_plugin_active() {
+        $this->define_plugins_dir( true );
         $this->set_active_plugins( array( WCB2B_Package::STANDALONE_PLUGIN ) );
 
         $this->assertFalse( WCB2B_Package::boot( self::HOST ) );

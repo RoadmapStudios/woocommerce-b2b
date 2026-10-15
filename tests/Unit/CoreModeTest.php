@@ -1,5 +1,6 @@
 <?php
 
+use Brain\Monkey\Filters;
 use Brain\Monkey\Functions;
 
 /**
@@ -61,6 +62,35 @@ class CoreModeTest extends WCB2B_TestCase {
         $this->assertFalse( defined( 'WCB2B_ENVATO_ID' ) );
         $this->assertFileDoesNotExist( self::package_dir() . 'includes/classes/class-wcb2b-upgrade.php' );
         $this->assertMatchesRegularExpression( '/^\s*Update URI:\s*\S+/m', file_get_contents( self::package_dir() . 'woocommerce-b2b.php' ) );
+    }
+
+    public function test_wc_compatibility_conflict_with_host_declaration_does_not_fatal() {
+        $this->stub_plugins_url();
+        WCB2B_Package::boot( self::HOST );
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::$throw = true;
+
+        WCB2B()->wc_compatibility();
+
+        $this->assertSame( array(), \Automattic\WooCommerce\Utilities\FeaturesUtil::$declared );
+    }
+
+    public function test_host_can_opt_out_of_wc_compatibility_declaration() {
+        $this->stub_plugins_url();
+        WCB2B_Package::boot( self::HOST );
+        Filters\expectApplied( 'wcb2b_declare_wc_compatibility' )->once()->andReturn( false );
+
+        WCB2B()->wc_compatibility();
+
+        $this->assertSame( array(), \Automattic\WooCommerce\Utilities\FeaturesUtil::$declared );
+    }
+
+    public function test_wc_compatibility_is_declared_by_default() {
+        $this->stub_plugins_url();
+        WCB2B_Package::boot( self::HOST );
+
+        WCB2B()->wc_compatibility();
+
+        $this->assertSame( array( 'custom_order_tables', 'cart_checkout_blocks' ), \Automattic\WooCommerce\Utilities\FeaturesUtil::$declared );
     }
 
     public function test_package_mode_loads_bundled_translation() {

@@ -45,6 +45,21 @@ abstract class WCB2B_TestCase extends \PHPUnit\Framework\TestCase {
 
     protected function stub_plugins_url() {
         Functions\when( 'plugins_url' )->justReturn( 'https://example.test/plugins-url/' );
+        Functions\when( 'plugin_dir_url' )->justReturn( 'https://example.test/plugin-dir-url/' );
+    }
+
+    /**
+     * Define WP_PLUGIN_DIR as a temporary folder, optionally holding the standalone plugin file
+     *
+     * @param bool $with_standalone Create woocommerce-b2b/woocommerce-b2b.php inside it
+     */
+    protected function define_plugins_dir( $with_standalone ) {
+        $dir = sys_get_temp_dir() . '/wcb2b-plugins-' . uniqid();
+        mkdir( $dir . '/woocommerce-b2b', 0777, true );
+        if ( $with_standalone ) {
+            touch( $dir . '/woocommerce-b2b/woocommerce-b2b.php' );
+        }
+        define( 'WP_PLUGIN_DIR', $dir );
     }
 
     protected function set_active_plugins( array $plugins ) {

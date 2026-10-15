@@ -65,6 +65,10 @@ final class WCB2B_Package {
      * Delete all WooCommerce B2B data, for host plugins' uninstall.php
      */
     public static function uninstall() {
+        // The plugin being uninstalled is inactive: a defined mode means another copy still runs B2B
+        if ( defined( 'WCB2B_MODE' ) ) {
+            return;
+        }
         include_once self::dir() . 'includes/wcb2b-uninstall.php';
         wcb2b_uninstall();
     }
@@ -102,20 +106,29 @@ final class WCB2B_Package {
         if ( null !== self::$booted_by || class_exists( 'WooCommerceB2B', false ) ) {
             return self::refuse( $plugin_file );
         }
-        if ( did_action( 'plugins_loaded' ) || doing_action( 'plugins_loaded' ) ) {
+        // Activation loads the plugin file in a sandbox after plugins_loaded, boot there as usual
+        $sandbox = defined( 'WP_SANDBOX_SCRAPING' ) && WP_SANDBOX_SCRAPING;
+        if ( ! $sandbox && ( did_action( 'plugins_loaded' ) || doing_action( 'plugins_loaded' ) ) ) {
             _doing_it_wrong( __METHOD__, 'WooCommerce B2B must be booted while the plugin file loads, before plugins_loaded.', '4.2.0' );
             return false;
         }
         self::$booted_by = $plugin_file;
 
-        $url = isset( $args['url'] ) ? $args['url'] : plugins_url( '/', self::dir() . 'woocommerce-b2b.php' );
+        // The standalone plugin runs its own copy, even when a host autoloaded this class from vendor/
+        if ( self::MODE_PLUGIN === $mode ) {
+            $dir = trailingslashit( dirname( $plugin_file ) );
+            $url = plugin_dir_url( $plugin_file );
+        } else {
+            $dir = self::dir();
+            $url = isset( $args['url'] ) ? $args['url'] : plugins_url( '/', $dir . 'woocommerce-b2b.php' );
+        }
 
         defined( 'WCB2B_MODE' ) || define( 'WCB2B_MODE', $mode );
         defined( 'WCB2B_PLUGIN_FILE' ) || define( 'WCB2B_PLUGIN_FILE', $plugin_file );
-        defined( 'WCB2B_PACKAGE_DIR' ) || define( 'WCB2B_PACKAGE_DIR', self::dir() );
+        defined( 'WCB2B_PACKAGE_DIR' ) || define( 'WCB2B_PACKAGE_DIR', $dir );
         defined( 'WCB2B_PLUGIN_URI' ) || define( 'WCB2B_PLUGIN_URI', trailingslashit( apply_filters( 'wcb2b_package_url', $url ) ) );
 
-        include_once self::dir() . 'includes/classes/class-wcb2b.php';
+        include_once $dir . 'includes/classes/class-wcb2b.php';
 
         // Global for backwards compatibility
         $GLOBALS['wcb2b'] = WCB2B();
@@ -143,8 +156,11 @@ final class WCB2B_Package {
      * @return bool
      */
     private static function standalone_is_active() {
-        return array_key_exists( self::STANDALONE_PLUGIN, (array) get_site_option( 'active_sitewide_plugins', array() ) )
+        $active = array_key_exists( self::STANDALONE_PLUGIN, (array) get_site_option( 'active_sitewide_plugins', array() ) )
             || in_array( self::STANDALONE_PLUGIN, (array) get_option( 'active_plugins', array() ), true );
+
+        // A folder removed by FTP or deploy stays listed as active until the plugins screen is opened
+        return $active && file_exists( WP_PLUGIN_DIR . '/' . self::STANDALONE_PLUGIN );
     }
 
     /**

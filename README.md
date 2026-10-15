@@ -25,13 +25,13 @@ If `vendor/` is outside `wp-content/plugins` (for example a Bedrock root `vendor
 WCB2B_Package::boot( __FILE__, array( 'url' => content_url( '/vendor/commercebird/woocommerce-b2b/' ) ) );
 ```
 
-In the host plugin's `uninstall.php`, call `WCB2B_Package::uninstall();` only if uninstalling the host should delete all B2B data.
+In the host plugin's `uninstall.php`, call `WCB2B_Package::uninstall();` if uninstalling the host should delete all B2B data. It does nothing while the standalone plugin or another host still runs B2B.
 
 What the host plugin takes over in package mode:
 
 - **Updates**: B2B has no update checker of its own. Update it with `composer update`.
 - **Activation and dependencies**: B2B never deactivates the host. If WooCommerce is missing, B2B shows a notice and stays idle.
-- **HPOS and Cart/Checkout blocks**: B2B declares compatibility for the host plugin file. The rest of the host plugin must be compatible too.
+- **HPOS and Cart/Checkout blocks**: B2B declares compatibility for the host plugin file. If the host is not compatible, opt out with `add_filter( 'wcb2b_declare_wc_compatibility', '__return_false' );` and make the host's own declaration.
 - **Plugins screen**: B2B adds no row links or Settings link. Settings stay at WooCommerce → Settings → B2B.
 
 Detect B2B with `function_exists( 'WCB2B' )`. Don't check `is_plugin_active( 'woocommerce-b2b/woocommerce-b2b.php' )`, because that is false in package mode.

@@ -65,6 +65,8 @@ final class WCB2B_Package {
      * Delete all WooCommerce B2B data, for host plugins' uninstall.php
      */
     public static function uninstall() {
+        include_once self::dir() . 'includes/wcb2b-uninstall.php';
+        wcb2b_uninstall();
     }
 
     /**

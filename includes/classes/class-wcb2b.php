@@ -373,3 +373,16 @@ final class WooCommerceB2B {
     }
     
 }
+
+if ( ! function_exists( 'WCB2B' ) ) {
+
+    /**
+     * Returns the main instance of WCB2B
+     *
+     * @return WooCommerceB2B
+     */
+    function WCB2B() {
+        return WooCommerceB2B::instance();
+    }
+
+}

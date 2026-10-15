@@ -22,24 +22,9 @@
 // Exit if accessed directly
 defined( 'ABSPATH' ) || exit;
 
-if ( ! defined( 'WCB2B_PLUGIN_FILE' ) ) {
-    define( 'WCB2B_PLUGIN_FILE', __FILE__ );
-}
-if ( ! defined( 'WCB2B_PLUGIN_URI' ) ) {
-    define( 'WCB2B_PLUGIN_URI', plugin_dir_url( __FILE__ ) );
+// A host plugin may already have autoloaded the loader
+if ( ! class_exists( 'WCB2B_Package', false ) ) {
+    require_once __DIR__ . '/includes/class-wcb2b-package.php';
 }
 
-// Include the main WooCommerce B2B class
-include_once dirname( __FILE__ ) . '/includes/classes/class-wcb2b.php';
-
-/**
- * Returns the main instance of WCB2B
- *
- * @return WooCommerceB2B
- */
-function WCB2B() {
-    return WooCommerceB2B::instance();
-}
-
-// Global for backwards compatibility
-$GLOBALS['wcb2b'] = WCB2B();
+WCB2B_Package::boot_standalone( __FILE__ );

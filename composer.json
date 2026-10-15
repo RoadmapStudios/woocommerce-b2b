@@ -1,0 +1,26 @@
+{
+    "name": "commercebird/woocommerce-b2b",
+    "description": "Transform your WooCommerce into Business-to-Business shop for wholesale. Runs as a standalone plugin or bundled inside another plugin.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://commercebird.com/",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "brain/monkey": "^2.6",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "classmap": [ "includes/class-wcb2b-package.php" ]
+    },
+    "autoload-dev": {
+        "classmap": [ "tests/Unit/WCB2B_TestCase.php", "tests/stubs/" ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
